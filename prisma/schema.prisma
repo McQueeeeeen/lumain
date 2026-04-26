@@ -1,0 +1,72 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Product {
+  id               String   @id @default(uuid())
+  name             String
+  article          String   @unique
+  brand            String
+  price            Float
+  discountPrice    Float?
+  category         String
+  style            String
+  room             String   // Comma separated list
+  color            String
+  lightColor       String
+  power            Float
+  mounting         String
+  images           String   // JSON string of image URLs
+  stock            Int      @default(0)
+  luminousFlux     Int      @default(0)
+  recommendedArea  String?
+  dimensions       String   // JSON string: {length, width, height}
+  lampBase         String?
+  bulbsIncluded    Boolean  @default(false)
+  supportedBulbs   String?  // JSON string
+  material         String?
+  protection       String?
+  warranty         String?
+  description      String?
+  finish           String?
+  voltage          String?
+  cri              String?
+  installationType String?
+  application      String?  // JSON string
+  unit             String   @default("шт.")
+  deliveryTime     String   @default("В наличии")
+  updatedAt        DateTime @updatedAt
+  createdAt        DateTime @default(now())
+}
+
+model Proposal {
+  id             String   @id @default(uuid())
+  number         Int?     @unique
+  projectName    String?
+  clientName     String
+  clientPhone    String?
+  clientEmail    String?
+  managerName    String
+  date           DateTime @default(now())
+  validityPeriod Int      @default(14)
+  globalDiscount Float    @default(0)
+  items          String   // JSON string of KPItems
+  notes          String?
+  status         String   @default("draft") // draft, sent, accepted, declined
+  total          Float
+  createdAt      DateTime @default(now())
+}
+
+model Collection {
+  id          String   @id @default(uuid())
+  name        String
+  designerId  String
+  items       String   // JSON string of product IDs
+  shareToken  String   @unique
+  createdAt   DateTime @default(now())
+}

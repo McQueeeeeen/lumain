@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+:root {
+  --lumain-color-air: #faf9f5;
+  --lumain-color-white: #ffffff;
+  --lumain-color-porcelain: #f1ece4;
+  --lumain-color-copper: #a66a3f;
+  --lumain-color-bronze: #8e623e;
+  --lumain-color-ink: #2d251e;
+  --lumain-color-muted: #766a5f;
+  --lumain-border-warm: rgba(166, 106, 63, 0.18);
+  --lumain-radius: 4px;
+  --lumain-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --lumain-duration-slow: 560ms;
+  --lumain-duration-medium: 420ms;
+  --lumain-header-height: 64px;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    background: var(--lumain-color-air);
+  }
+
+  body {
+    min-width: 320px;
+    overflow-x: hidden;
+    background:
+      radial-gradient(circle at top left, rgba(166, 106, 63, 0.08), transparent 34rem),
+      var(--lumain-color-air);
+    color: var(--lumain-color-ink);
+    @apply antialiased;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-ui {
+    font-family: var(--font-ui);
+  }
+
+  .lumain-surface {
+    border: 1px solid var(--lumain-border-warm);
+    background: rgba(255, 255, 255, 0.88);
+  }
+
+  .lumain-porcelain {
+    border: 1px solid var(--lumain-border-warm);
+    background: var(--lumain-color-porcelain);
+  }
+
+  .lumain-motion {
+    transition-duration: var(--lumain-duration-medium);
+    transition-timing-function: var(--lumain-ease);
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--lumain-border-warm);
+  }
+
+  .field-input {
+    height: 2.75rem;
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid var(--lumain-border-warm);
+    background: var(--lumain-color-white);
+    padding-inline: 0.875rem;
+    font-size: 0.9375rem;
+    color: var(--lumain-color-ink);
+    outline: none;
+    transition: border-color var(--lumain-duration-medium) var(--lumain-ease);
+  }
+
+  .field-input::placeholder {
+    color: #b49f8b;
+  }
+
+  .field-input:focus {
+    border-color: var(--lumain-color-copper);
+  }
+
+  .animate-spin-slow {
+    animation: spin 3s linear infinite;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes lumainEnter {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
