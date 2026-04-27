@@ -22,8 +22,11 @@ export default function CheckoutPage() {
           <Button variant="outline" onClick={clear} disabled={items.length === 0}>
             Очистить
           </Button>
-          <Link href="/catalog">
-            <Button>Продолжить выбор</Button>
+          <Link 
+            href="/catalog" 
+            className="inline-flex h-10 items-center justify-center rounded-[2px] bg-[#A66A3F] px-5 text-sm font-semibold text-white shadow-sm shadow-[#A66A3F]/20 transition-all hover:bg-[#8E623E]"
+          >
+            Продолжить выбор
           </Link>
         </div>
       </div>
@@ -36,8 +39,11 @@ export default function CheckoutPage() {
                 <ShoppingBag className="h-8 w-8 text-[#A66A3F]" />
               </div>
               <h2 className="font-display text-3xl font-semibold text-[#2D251E]">Корзина пуста</h2>
-              <Link href="/catalog">
-                <Button className="mt-6">Перейти в каталог</Button>
+              <Link 
+                href="/catalog" 
+                className="mt-6 inline-flex h-10 items-center justify-center rounded-[2px] bg-[#A66A3F] px-5 text-sm font-semibold text-white transition-all hover:bg-[#8E623E]"
+              >
+                Перейти в каталог
               </Link>
             </Card>
           ) : (

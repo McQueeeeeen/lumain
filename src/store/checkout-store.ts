@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
+import { normalizeProductImages } from "@/lib/product-media";
 import { Product } from "@/types";
 
 export interface CheckoutItem extends Product {
@@ -30,7 +31,7 @@ export const useCheckoutStore = create<CheckoutStore>()(
 
         const price = product.discountPrice || product.price;
         set({
-          items: [...get().items, { ...product, quantity: 1, subtotal: price }],
+          items: [...get().items, { ...normalizeProductImages(product), quantity: 1, subtotal: price }],
         });
       },
       removeItem: (productId) =>
@@ -55,6 +56,15 @@ export const useCheckoutStore = create<CheckoutStore>()(
     }),
     {
       name: "checkout-storage",
+      merge: (persistedState, currentState) => {
+        const persisted = persistedState as Partial<CheckoutStore> | undefined;
+
+        return {
+          ...currentState,
+          ...persisted,
+          items: (persisted?.items ?? currentState.items).map((item) => normalizeProductImages(item)),
+        };
+      },
     }
   )
 );

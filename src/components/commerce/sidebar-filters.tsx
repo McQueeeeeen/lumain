@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Search, X } from "lucide-react";
 import { Button } from "@/components/ui";
@@ -22,7 +22,7 @@ const rooms: { label: string; value: Room }[] = [
   { label: "Ванная", value: "bathroom" },
 ];
 
-const colors = [
+export const colors = [
   { name: "Белый", value: "white", hex: "#FFFFFF" },
   { name: "Черный", value: "black", hex: "#000000" },
   { name: "Золото", value: "gold", hex: "#D4AF37" },
@@ -67,12 +67,12 @@ export function SidebarFilters() {
   };
 
   return (
-    <aside className="lumain-surface h-fit p-4 lg:sticky lg:top-20 lg:w-60">
+    <aside className="lumain-surface h-fit min-w-0 w-full p-4 lg:sticky lg:top-20 lg:w-60">
       <div className="mb-6 flex items-center justify-between">
         <h2 className="font-display text-2xl font-semibold text-[#2D251E]">Фильтр</h2>
         <button 
           onClick={handleReset}
-          className="text-xs font-bold uppercase tracking-widest text-[#766A5F] hover:text-[#A66A3F]"
+          className="min-h-10 px-2 text-xs font-bold uppercase tracking-widest text-[#766A5F] hover:text-[#A66A3F]"
         >
           Reset
         </button>
@@ -102,7 +102,7 @@ export function SidebarFilters() {
               <button 
                 key={style.value} 
                 onClick={() => setSelectedStyle(selectedStyle === style.value ? "" : style.value)}
-                className={`min-w-0 rounded-[2px] border px-2 py-1.5 text-xs font-semibold transition-colors ${
+                className={`min-h-[44px] min-w-0 rounded-[2px] border px-2 py-2 text-xs font-semibold transition-colors ${
                   selectedStyle === style.value 
                     ? "border-[#A66A3F] bg-[#F1ECE4] text-[#2D251E]" 
                     : "border-[rgba(166,106,63,0.18)] text-[#766A5F] hover:border-[#A66A3F]"
@@ -117,7 +117,7 @@ export function SidebarFilters() {
         <FilterGroup title="Помещение">
           <div className="grid gap-2">
             {rooms.map((room) => (
-              <label key={room.value} className="flex cursor-pointer items-center gap-3 text-sm text-[#766A5F] hover:text-[#2D251E]">
+              <label key={room.value} className="flex min-h-[44px] cursor-pointer items-center gap-3 text-sm text-[#766A5F] hover:text-[#2D251E]">
                 <input 
                   type="checkbox" 
                   checked={selectedRooms.includes(room.value)}
@@ -149,7 +149,7 @@ export function SidebarFilters() {
           </div>
         </FilterGroup>
 
-        <Button className="w-full gap-2" onClick={handleApply}>
+        <Button className="w-full min-h-[44px] gap-2" onClick={handleApply}>
           <Search className="h-4 w-4" />
           Применить
         </Button>

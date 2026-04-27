@@ -13,12 +13,12 @@ const display = Cormorant_Garamond({
 });
 
 const ui = DM_Sans({
-  subsets: ["latin", "latin-ext"],
+  subsets: ["latin"],
   variable: "--font-ui",
 });
 
 export const metadata: Metadata = {
-  title: "Lumain | Премиальное освещение",
+  title: "Haydi | Премиальное освещение",
   description: "Эксклюзивная витрина света для дизайнеров и частных клиентов.",
 };
 
@@ -30,34 +30,47 @@ export default function RootLayout({
   return (
     <html lang="ru" className={`${display.variable} ${ui.variable}`}>
       <body className="overflow-x-hidden font-ui bg-[#FAF9F5] text-[#2D251E] antialiased">
-        <nav className="glass fixed inset-x-0 top-0 z-50 h-16">
-          <div className="mx-auto grid h-full max-w-7xl grid-cols-[1fr_auto_1fr] items-center gap-4 px-4">
-            <Link href="/" className="flex items-center gap-2 text-lg font-bold tracking-tight text-[#2D251E]">
-              <Layers className="h-5 w-5 text-[#A66A3F]" />
-              <span>
-                Lumain <span className="font-normal text-[#766A5F]">light</span>
+        <nav className="glass fixed inset-x-0 top-0 z-50 h-[var(--lumain-header-height)]">
+          <div className="mx-auto flex h-full max-w-7xl items-center justify-between gap-4 px-4">
+            <Link href="/" className="flex items-center gap-2 text-xl font-bold tracking-tight text-[#2D251E] transition-opacity hover:opacity-80">
+              <Layers className="h-6 w-6 text-[#A66A3F]" />
+              <span className="font-display">
+                Haydi <span className="font-normal text-[#766A5F]">light</span>
               </span>
             </Link>
 
-            <NavLinks />
+            <div className="hidden lg:block">
+              <NavLinks />
+            </div>
 
-            <div className="flex items-center justify-end gap-3">
-              <RoleSwitcher />
-              <div className="flex h-8 w-8 items-center justify-center rounded-[2px] border border-[rgba(166,106,63,0.18)] bg-white text-xs font-bold text-[#766A5F]">
+            <div className="flex items-center gap-3">
+              <div className="hidden sm:block">
+                <RoleSwitcher />
+              </div>
+              <div className="flex h-9 w-9 items-center justify-center rounded-[2px] border border-[rgba(166,106,63,0.18)] bg-white/80 text-xs font-bold text-[#766A5F] shadow-sm backdrop-blur-sm transition-transform active:scale-95">
                 AM
               </div>
             </div>
           </div>
         </nav>
-        <main className="min-h-screen pt-16">{children}</main>
-        <footer className="border-t border-[rgba(166,106,63,0.18)] bg-white py-10">
-          <div className="mx-auto grid max-w-7xl gap-6 px-4 text-sm text-[#766A5F] md:grid-cols-2">
+        <main className="min-h-screen pt-[var(--lumain-header-height)]">{children}</main>
+        <footer className="border-t border-[rgba(166,106,63,0.18)] bg-[#FAF9F5] py-16">
+          <div className="mx-auto grid max-w-7xl gap-10 px-4 text-sm text-[#766A5F] md:grid-cols-[2fr_1fr_1fr]">
+            <div className="space-y-4">
+              <div className="font-display text-3xl font-semibold text-[#2D251E]">Haydi light</div>
+              <p className="max-w-xs leading-relaxed">Эксклюзивная витрина света для интерьерных решений любой сложности.</p>
+            </div>
             <div>
-              <div className="font-display text-2xl font-semibold text-[#2D251E]">Lumain light</div>
+              <div className="mb-4 text-xs font-bold uppercase tracking-widest text-[#2D251E]">Меню</div>
+              <ul className="space-y-2">
+                <li><Link href="/catalog" className="hover:text-[#A66A3F]">Каталог</Link></li>
+                <li><Link href="/collections" className="hover:text-[#A66A3F]">Подборки</Link></li>
+                <li><Link href="/proposals" className="hover:text-[#A66A3F]">КП</Link></li>
+              </ul>
             </div>
             <div className="md:text-right">
-              <div>Каталог / Помощь / О нас</div>
-              <div className="mt-2">&copy; 2026 Lumain</div>
+              <div className="mb-4 text-xs font-bold uppercase tracking-widest text-[#2D251E]">Контакты</div>
+              <div className="mt-2">&copy; 2026 Haydi.kz. Все права защищены.</div>
             </div>
           </div>
         </footer>
@@ -65,4 +78,3 @@ export default function RootLayout({
     </html>
   );
 }
-

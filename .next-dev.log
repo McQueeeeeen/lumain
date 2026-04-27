@@ -1,0 +1,1189 @@
+
+> lumain@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.4 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.201:3000
+✓ Ready in 1405ms
+
+Fetching products with filters: {
+  q: undefined,
+  style: undefined,
+  room: undefined,
+  minPrice: undefined,
+  maxPrice: undefined,
+  category: 'Все'
+}
+Prisma where clause: {}
+ GET /proposals 200 in 434ms (next.js: 99ms, application-code: 336ms)
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+Found 4 products
+ GET /catalog 200 in 1736ms (next.js: 502ms, application-code: 1234ms)
+prisma:query SELECT `main`.`Product`.`id` FROM `main`.`Product` WHERE 1=1 LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE (`main`.`Product`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE `main`.`Product`.`id` <> ? ORDER BY `main`.`Product`.`id` ASC LIMIT ? OFFSET ?
+ GET /catalog/bbffe779-9f80-4c77-85d1-0afbbfd17519 200 in 1211ms (next.js: 866ms, generate-params: 805ms, application-code: 345ms)
+Fetching products with filters: undefined
+Prisma where clause: {}
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+Found 4 products
+ GET / 200 in 750ms (next.js: 270ms, application-code: 480ms)
+ GET / 307 in 313ms (next.js: 130ms, application-code: 183ms)
+Fetching products with filters: {
+  q: undefined,
+  style: undefined,
+  room: undefined,
+  minPrice: undefined,
+  maxPrice: undefined,
+  category: 'Все'
+}
+Prisma where clause: {}
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+Found 4 products
+ GET /catalog 200 in 456ms (next.js: 80ms, application-code: 376ms)
+Fetching products with filters: {
+  q: undefined,
+  style: undefined,
+  room: undefined,
+  minPrice: undefined,
+  maxPrice: undefined,
+  category: 'Все'
+}
+Prisma where clause: {}
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+Found 4 products
+ GET / 307 in 370ms (next.js: 12ms, application-code: 358ms)
+ GET /catalog 200 in 285ms (next.js: 6ms, application-code: 279ms)
+Fetching products with filters: {
+  q: undefined,
+  style: undefined,
+  room: undefined,
+  minPrice: undefined,
+  maxPrice: undefined,
+  category: 'Все'
+}
+Prisma where clause: {}
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+Found 4 products
+ GET /catalog 200 in 106ms (next.js: 5ms, application-code: 102ms)
+ GET /collections 200 in 206ms (next.js: 114ms, application-code: 91ms)
+ GET /checkout 200 in 218ms (next.js: 95ms, application-code: 123ms)
+ GET /proposals 200 in 331ms (next.js: 49ms, application-code: 282ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/1 404 in 874ms (next.js: 760ms, application-code: 114ms)
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE (`main`.`Product`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE `main`.`Product`.`id` <> ? ORDER BY `main`.`Product`.`id` ASC LIMIT ? OFFSET ?
+ GET /catalog/abc2c2d0-7a11-460b-b505-f803dd312738 200 in 280ms (next.js: 37ms, generate-params: 8ms, application-code: 243ms)
+prisma:query SELECT `main`.`Product`.`id` FROM `main`.`Product` WHERE 1=1 LIMIT ? OFFSET ?
+Fetching products with filters: {
+  q: undefined,
+  style: undefined,
+  room: undefined,
+  minPrice: undefined,
+  maxPrice: undefined,
+  category: 'Все'
+}
+Prisma where clause: {}
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+Found 4 products
+ GET / 307 in 169ms (next.js: 3ms, application-code: 166ms)
+ GET /catalog 200 in 119ms (next.js: 5ms, application-code: 114ms)
+Fetching products with filters: {
+  q: undefined,
+  style: undefined,
+  room: undefined,
+  minPrice: undefined,
+  maxPrice: undefined,
+  category: 'Все'
+}
+Prisma where clause: {}
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+Found 4 products
+ GET /catalog 200 in 155ms (next.js: 6ms, application-code: 149ms)
+ GET /collections 200 in 57ms (next.js: 3ms, application-code: 54ms)
+ GET /checkout 200 in 97ms (next.js: 3ms, application-code: 93ms)
+ GET /proposals 200 in 59ms (next.js: 5ms, application-code: 54ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/1 404 in 102ms (next.js: 10ms, application-code: 92ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE (`main`.`Product`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE `main`.`Product`.`id` <> ? ORDER BY `main`.`Product`.`id` ASC LIMIT ? OFFSET ?
+ GET /catalog/abc2c2d0-7a11-460b-b505-f803dd312738 200 in 147ms (next.js: 10ms, generate-params: 7ms, application-code: 137ms)
+prisma:query SELECT `main`.`Product`.`id` FROM `main`.`Product` WHERE 1=1 LIMIT ? OFFSET ?
+Fetching products with filters: {
+  q: undefined,
+  style: undefined,
+  room: undefined,
+  minPrice: undefined,
+  maxPrice: undefined,
+  category: 'Все'
+}
+Prisma where clause: {}
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+Found 4 products
+ GET / 307 in 209ms (next.js: 3ms, application-code: 206ms)
+ GET /catalog 200 in 178ms (next.js: 3ms, application-code: 175ms)
+Fetching products with filters: {
+  q: undefined,
+  style: undefined,
+  room: undefined,
+  minPrice: undefined,
+  maxPrice: undefined,
+  category: 'Все'
+}
+Prisma where clause: {}
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+Found 4 products
+ GET /catalog 200 in 175ms (next.js: 5ms, application-code: 170ms)
+ GET /collections 200 in 73ms (next.js: 3ms, application-code: 70ms)
+ GET /checkout 200 in 81ms (next.js: 4ms, application-code: 77ms)
+ GET /proposals 200 in 64ms (next.js: 3ms, application-code: 61ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/1 404 in 236ms (next.js: 12ms, application-code: 224ms)
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE (`main`.`Product`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE `main`.`Product`.`id` <> ? ORDER BY `main`.`Product`.`id` ASC LIMIT ? OFFSET ?
+ GET /catalog/abc2c2d0-7a11-460b-b505-f803dd312738 200 in 233ms (next.js: 13ms, generate-params: 9ms, application-code: 220ms)
+prisma:query SELECT `main`.`Product`.`id` FROM `main`.`Product` WHERE 1=1 LIMIT ? OFFSET ?
+Fetching products with filters: {
+  q: undefined,
+  style: undefined,
+  room: undefined,
+  minPrice: undefined,
+  maxPrice: undefined,
+  category: 'Все'
+}
+Prisma where clause: {}
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+Found 4 products
+ GET / 307 in 300ms (next.js: 7ms, application-code: 293ms)
+ GET /catalog 200 in 247ms (next.js: 6ms, application-code: 240ms)
+Fetching products with filters: {
+  q: undefined,
+  style: undefined,
+  room: undefined,
+  minPrice: undefined,
+  maxPrice: undefined,
+  category: 'Все'
+}
+Prisma where clause: {}
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+Found 4 products
+ GET /catalog 200 in 209ms (next.js: 7ms, application-code: 202ms)
+ GET /collections 200 in 98ms (next.js: 5ms, application-code: 93ms)
+ GET /checkout 200 in 207ms (next.js: 6ms, application-code: 201ms)
+ GET /proposals 200 in 94ms (next.js: 4ms, application-code: 90ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/1 404 in 286ms (next.js: 18ms, application-code: 268ms)
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE (`main`.`Product`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE `main`.`Product`.`id` <> ? ORDER BY `main`.`Product`.`id` ASC LIMIT ? OFFSET ?
+ GET /catalog/abc2c2d0-7a11-460b-b505-f803dd312738 200 in 687ms (next.js: 18ms, generate-params: 11ms, application-code: 670ms)
+prisma:query SELECT `main`.`Product`.`id` FROM `main`.`Product` WHERE 1=1 LIMIT ? OFFSET ?
+Fetching products with filters: {
+  q: undefined,
+  style: undefined,
+  room: undefined,
+  minPrice: undefined,
+  maxPrice: undefined,
+  category: 'Все'
+}
+Prisma where clause: {}
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+Found 4 products
+ GET / 307 in 361ms (next.js: 11ms, application-code: 350ms)
+ GET /catalog 200 in 204ms (next.js: 12ms, application-code: 192ms)
+Fetching products with filters: {
+  q: undefined,
+  style: undefined,
+  room: undefined,
+  minPrice: undefined,
+  maxPrice: undefined,
+  category: 'Все'
+}
+Prisma where clause: {}
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+Found 4 products
+ GET /catalog 200 in 332ms (next.js: 5ms, application-code: 327ms)
+ GET /collections 200 in 140ms (next.js: 5ms, application-code: 135ms)
+ GET /checkout 200 in 95ms (next.js: 5ms, application-code: 90ms)
+ GET /proposals 200 in 91ms (next.js: 6ms, application-code: 85ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/1 404 in 211ms (next.js: 14ms, application-code: 197ms)
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE (`main`.`Product`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE `main`.`Product`.`id` <> ? ORDER BY `main`.`Product`.`id` ASC LIMIT ? OFFSET ?
+ GET /catalog/abc2c2d0-7a11-460b-b505-f803dd312738 200 in 371ms (next.js: 16ms, generate-params: 11ms, application-code: 355ms)
+prisma:query SELECT `main`.`Product`.`id` FROM `main`.`Product` WHERE 1=1 LIMIT ? OFFSET ?
+Fetching products with filters: {
+  q: undefined,
+  style: undefined,
+  room: undefined,
+  minPrice: undefined,
+  maxPrice: undefined,
+  category: 'Все'
+}
+Prisma where clause: {}
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+Found 4 products
+ GET / 307 in 264ms (next.js: 4ms, application-code: 259ms)
+ GET /catalog 200 in 197ms (next.js: 4ms, application-code: 193ms)
+Fetching products with filters: {
+  q: undefined,
+  style: undefined,
+  room: undefined,
+  minPrice: undefined,
+  maxPrice: undefined,
+  category: 'Все'
+}
+Prisma where clause: {}
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE 1=1 ORDER BY `main`.`Product`.`createdAt` DESC LIMIT ? OFFSET ?
+Found 4 products
+ GET /catalog 200 in 261ms (next.js: 6ms, application-code: 255ms)
+ GET /collections 200 in 63ms (next.js: 3ms, application-code: 60ms)
+ GET /checkout 200 in 111ms (next.js: 5ms, application-code: 105ms)
+ GET /proposals 200 in 101ms (next.js: 5ms, application-code: 96ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/1 404 in 118ms (next.js: 10ms, application-code: 108ms)
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE (`main`.`Product`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Product`.`id`, `main`.`Product`.`name`, `main`.`Product`.`article`, `main`.`Product`.`brand`, `main`.`Product`.`price`, `main`.`Product`.`discountPrice`, `main`.`Product`.`category`, `main`.`Product`.`style`, `main`.`Product`.`room`, `main`.`Product`.`color`, `main`.`Product`.`lightColor`, `main`.`Product`.`power`, `main`.`Product`.`mounting`, `main`.`Product`.`images`, `main`.`Product`.`stock`, `main`.`Product`.`luminousFlux`, `main`.`Product`.`recommendedArea`, `main`.`Product`.`dimensions`, `main`.`Product`.`lampBase`, `main`.`Product`.`bulbsIncluded`, `main`.`Product`.`supportedBulbs`, `main`.`Product`.`material`, `main`.`Product`.`protection`, `main`.`Product`.`warranty`, `main`.`Product`.`description`, `main`.`Product`.`finish`, `main`.`Product`.`voltage`, `main`.`Product`.`cri`, `main`.`Product`.`installationType`, `main`.`Product`.`application`, `main`.`Product`.`unit`, `main`.`Product`.`deliveryTime`, `main`.`Product`.`updatedAt`, `main`.`Product`.`createdAt` FROM `main`.`Product` WHERE `main`.`Product`.`id` <> ? ORDER BY `main`.`Product`.`id` ASC LIMIT ? OFFSET ?
+ GET /catalog/abc2c2d0-7a11-460b-b505-f803dd312738 200 in 392ms (next.js: 11ms, generate-params: 7ms, application-code: 381ms)
+prisma:query SELECT `main`.`Product`.`id` FROM `main`.`Product` WHERE 1=1 LIMIT ? OFFSET ?
+✓ Compiled in 1580ms
+ GET /catalog 200 in 3.6s (next.js: 540ms, application-code: 3.1s)
+ GET /catalog/lum-101 200 in 1624ms (next.js: 1084ms, generate-params: 56ms, application-code: 540ms)
+ GET /catalog 200 in 1174ms (next.js: 17ms, application-code: 1157ms)
+ GET /catalog/lum-101 200 in 1075ms (next.js: 66ms, generate-params: 14ms, application-code: 1009ms)
+ GET /catalog 200 in 647ms (next.js: 78ms, application-code: 569ms)
+ GET /catalog?cat=%D0%9B%D1%8E%D1%81%D1%82%D1%80%D1%8B 200 in 2.8s (next.js: 789ms, application-code: 2.0s)
+ GET /catalog 200 in 4.5s (next.js: 34ms, application-code: 4.5s)
+✓ Compiled in 2.5s
+ GET / 200 in 1440ms (next.js: 1003ms, application-code: 437ms)
+ GET /catalog 200 in 1438ms (next.js: 291ms, application-code: 1146ms)
+ GET / 200 in 282ms (next.js: 22ms, application-code: 260ms)
+ GET /proposals 200 in 247ms (next.js: 202ms, application-code: 45ms)
+ GET /haydi/haydi-hero-chandelier.jpg 404 in 497ms (next.js: 103ms, application-code: 394ms)
+ GET /haydi/haydi-track.jpg 404 in 518ms (next.js: 163ms, application-code: 355ms)
+ GET /haydi/haydi-pendant.jpg 404 in 539ms (next.js: 213ms, application-code: 326ms)
+ GET /proposals 200 in 1557ms (next.js: 206ms, application-code: 1351ms)
+ GET /haydi/haydi-track.jpg 404 in 238ms (next.js: 24ms, application-code: 214ms)
+ GET /haydi/haydi-pendant.jpg 404 in 258ms (next.js: 157ms, application-code: 102ms)
+✓ Compiled in 964ms
+ GET /proposals 200 in 606ms (next.js: 438ms, application-code: 168ms)
+ GET /proposals 200 in 4.7s (next.js: 658ms, application-code: 4.1s)
+ GET /proposals 200 in 350ms (next.js: 88ms, application-code: 263ms)
+ GET /haydi/haydi-track.jpg 404 in 196ms (next.js: 65ms, application-code: 130ms)
+ GET /haydi/haydi-pendant.jpg 404 in 222ms (next.js: 138ms, application-code: 85ms)
+✓ Compiled in 400ms
+ GET /proposals 200 in 1243ms (next.js: 11ms, application-code: 1232ms)
+ GET /proposals 200 in 603ms (next.js: 262ms, application-code: 342ms)
+ GET /proposals 200 in 284ms (next.js: 111ms, application-code: 173ms)
+ GET /proposals 200 in 293ms (next.js: 7ms, application-code: 286ms)
+ GET /proposals 200 in 294ms (next.js: 44ms, application-code: 250ms)
+ GET /proposals 200 in 305ms (next.js: 148ms, application-code: 157ms)
+✓ Compiled in 2.4s
+ GET /proposals 200 in 745ms (next.js: 364ms, application-code: 381ms)
+ GET /proposals 200 in 306ms (next.js: 4ms, application-code: 302ms)
+ GET /proposals 200 in 394ms (next.js: 5ms, application-code: 388ms)
+ GET /proposals 200 in 395ms (next.js: 46ms, application-code: 348ms)
+ GET /proposals 200 in 356ms (next.js: 14ms, application-code: 342ms)
+ GET /proposals 200 in 377ms (next.js: 12ms, application-code: 365ms)
+ GET /proposals 200 in 305ms (next.js: 9ms, application-code: 296ms)
+ GET /proposals 200 in 226ms (next.js: 7ms, application-code: 219ms)
+ GET /proposals 200 in 120ms (next.js: 12ms, application-code: 108ms)
+ GET /proposals 200 in 116ms (next.js: 58ms, application-code: 57ms)
+✓ Compiled in 726ms
+ GET /proposals 200 in 1246ms (next.js: 444ms, application-code: 802ms)
+ GET /proposals 200 in 416ms (next.js: 169ms, application-code: 246ms)
+ GET /proposals 200 in 137ms (next.js: 45ms, application-code: 92ms)
+ GET /proposals 200 in 139ms (next.js: 86ms, application-code: 53ms)
+ GET /proposals 200 in 142ms (next.js: 6ms, application-code: 136ms)
+✓ Compiled in 157ms
+ GET /proposals 200 in 483ms (next.js: 240ms, application-code: 243ms)
+ GET /proposals 200 in 145ms (next.js: 6ms, application-code: 139ms)
+ GET /proposals 200 in 80ms (next.js: 8ms, application-code: 72ms)
+ GET /proposals 200 in 2.0s (next.js: 33ms, application-code: 1996ms)
+✓ Compiled in 305ms
+ GET /proposals 200 in 540ms (next.js: 364ms, application-code: 176ms)
+ GET /proposals 200 in 101ms (next.js: 5ms, application-code: 96ms)
+ GET /proposals 200 in 70ms (next.js: 5ms, application-code: 65ms)
+✓ Compiled in 1658ms
+ GET /proposals 200 in 306ms (next.js: 92ms, application-code: 214ms)
+ GET /proposals 200 in 142ms (next.js: 8ms, application-code: 135ms)
+ GET /proposals 200 in 88ms (next.js: 5ms, application-code: 83ms)
+ GET /proposals 200 in 359ms (next.js: 149ms, application-code: 211ms)
+ GET /proposals 200 in 116ms (next.js: 5ms, application-code: 110ms)
+ GET /proposals 200 in 66ms (next.js: 5ms, application-code: 61ms)
+✓ Compiled in 300ms
+ GET /proposals 200 in 334ms (next.js: 216ms, application-code: 118ms)
+✓ Compiled in 209ms
+ GET /proposals 200 in 392ms (next.js: 204ms, application-code: 188ms)
+ GET /proposals 200 in 540ms (next.js: 5ms, application-code: 535ms)
+✓ Compiled in 212ms
+ GET /proposals 200 in 332ms (next.js: 232ms, application-code: 101ms)
+✓ Compiled in 76ms
+ GET /proposals 200 in 361ms (next.js: 137ms, application-code: 224ms)
+ GET /proposals 200 in 122ms (next.js: 7ms, application-code: 115ms)
+ GET /proposals 200 in 223ms (next.js: 111ms, application-code: 112ms)
+ GET /proposals 200 in 494ms (next.js: 8ms, application-code: 486ms)
+✓ Compiled in 140ms
+ GET /proposals 200 in 1484ms (next.js: 620ms, application-code: 864ms)
+ GET /proposals 200 in 685ms (next.js: 168ms, application-code: 517ms)
+ GET /proposals 200 in 396ms (next.js: 90ms, application-code: 305ms)
+ GET /proposals 200 in 400ms (next.js: 12ms, application-code: 387ms)
+ GET /proposals 200 in 398ms (next.js: 259ms, application-code: 140ms)
+✓ Compiled in 393ms
+ GET /proposals 200 in 843ms (next.js: 587ms, application-code: 256ms)
+✓ Compiled in 254ms
+ GET /proposals 200 in 1574ms (next.js: 211ms, application-code: 1363ms)
+ GET /proposals 200 in 962ms (next.js: 64ms, application-code: 898ms)
+✓ Compiled in 172ms
+ GET /proposals 200 in 343ms (next.js: 215ms, application-code: 128ms)
+✓ Compiled in 1010ms
+ GET /proposals 200 in 468ms (next.js: 320ms, application-code: 148ms)
+ GET /proposals 200 in 2.9s (next.js: 864ms, application-code: 2.0s)
+✓ Compiled in 34ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`number` DESC LIMIT ? OFFSET ?
+prisma:query INSERT INTO `main`.`Proposal` (`id`, `number`, `projectName`, `clientName`, `clientPhone`, `clientEmail`, `managerName`, `date`, `validityPeriod`, `globalDiscount`, `items`, `notes`, `status`, `total`, `createdAt`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `number` AS `number`, `projectName` AS `projectName`, `clientName` AS `clientName`, `clientPhone` AS `clientPhone`, `clientEmail` AS `clientEmail`, `managerName` AS `managerName`, `date` AS `date`, `validityPeriod` AS `validityPeriod`, `globalDiscount` AS `globalDiscount`, `items` AS `items`, `notes` AS `notes`, `status` AS `status`, `total` AS `total`, `createdAt` AS `createdAt`
+ POST /proposals 200 in 5.7s (next.js: 211ms, application-code: 5.5s)
+  └─ ƒ saveProposal({"clientEmail":"","clientName":"Азамат","clientPhone":"+77015225635","...":"7 items not stringified"}) in 944ms src/app/proposals/actions.ts
+ GET /proposals 200 in 3.9s (next.js: 3.7s, application-code: 221ms)
+✓ Compiled in 1064ms
+ GET /proposals 200 in 5.0s (next.js: 427ms, application-code: 4.5s)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/c5249740-0471-4ea6-83f0-f9a2518fa725 200 in 9.0s (next.js: 6.2s, application-code: 2.9s)
+✓ Compiled in 2.7s
+ GET /proposals 200 in 4.1s (next.js: 2.1s, application-code: 1965ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/c5249740-0471-4ea6-83f0-f9a2518fa725 200 in 330ms (next.js: 60ms, application-code: 270ms)
+ GET /proposals 200 in 1347ms (next.js: 39ms, application-code: 1308ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/c5249740-0471-4ea6-83f0-f9a2518fa725 200 in 2.9s (next.js: 324ms, application-code: 2.6s)
+ GET /proposals 200 in 395ms (next.js: 51ms, application-code: 344ms)
+ GET / 200 in 2.6s (next.js: 725ms, application-code: 1842ms)
+ GET /catalog 200 in 1523ms (next.js: 553ms, application-code: 970ms)
+ GET /catalog/lum-101 200 in 2.8s (next.js: 318ms, generate-params: 24ms, application-code: 2.5s)
+ GET /checkout 200 in 1038ms (next.js: 555ms, application-code: 483ms)
+ GET /catalog/lum-101 200 in 313ms (next.js: 23ms, generate-params: 14ms, application-code: 290ms)
+ GET /proposals 200 in 196ms (next.js: 19ms, application-code: 177ms)
+ GET /checkout 200 in 180ms (next.js: 14ms, application-code: 166ms)
+ GET /proposals 200 in 208ms (next.js: 7ms, application-code: 201ms)
+ GET /collections 200 in 1134ms (next.js: 571ms, application-code: 563ms)
+ GET /proposals 200 in 133ms (next.js: 13ms, application-code: 120ms)
+ GET / 200 in 473ms (next.js: 87ms, application-code: 386ms)
+ GET /proposals 200 in 88ms (next.js: 6ms, application-code: 82ms)
+✓ Compiled in 1350ms
+ GET /proposals 200 in 2.1s (next.js: 2.0s, application-code: 117ms)
+ GET / 200 in 2.1s (next.js: 1378ms, application-code: 736ms)
+ GET /proposals 200 in 434ms (next.js: 143ms, application-code: 291ms)
+ GET / 200 in 444ms (next.js: 57ms, application-code: 386ms)
+ GET / 200 in 164ms (next.js: 17ms, application-code: 147ms)
+ GET /proposals 200 in 4.6s (next.js: 1302ms, application-code: 3.3s)
+ GET /proposals 200 in 2.6s (next.js: 933ms, application-code: 1680ms)
+ GET /proposals 200 in 1601ms (next.js: 10ms, application-code: 1590ms)
+ GET /proposals 200 in 1603ms (next.js: 118ms, application-code: 1485ms)
+ GET / 200 in 2.7s (next.js: 512ms, application-code: 2.2s)
+ GET / 200 in 1637ms (next.js: 245ms, application-code: 1392ms)
+ GET / 200 in 738ms (next.js: 40ms, application-code: 699ms)
+✓ Compiled in 664ms
+ GET /proposals 200 in 895ms (next.js: 495ms, application-code: 400ms)
+ GET / 200 in 906ms (next.js: 734ms, application-code: 172ms)
+✓ Compiled in 728ms
+ GET /proposals 200 in 1005ms (next.js: 225ms, application-code: 780ms)
+ GET / 200 in 1831ms (next.js: 14ms, application-code: 1818ms)
+ GET /proposals 200 in 634ms (next.js: 16ms, application-code: 617ms)
+ GET /proposals 200 in 477ms (next.js: 171ms, application-code: 306ms)
+ GET /proposals 200 in 345ms (next.js: 135ms, application-code: 210ms)
+ GET / 200 in 817ms (next.js: 85ms, application-code: 732ms)
+ GET / 200 in 583ms (next.js: 17ms, application-code: 566ms)
+ GET / 200 in 574ms (next.js: 98ms, application-code: 477ms)
+✓ Compiled in 185ms
+ GET /proposals 200 in 935ms (next.js: 300ms, application-code: 635ms)
+ GET /proposals 200 in 530ms (next.js: 65ms, application-code: 465ms)
+ GET / 200 in 953ms (next.js: 159ms, application-code: 794ms)
+ GET /proposals 200 in 423ms (next.js: 182ms, application-code: 240ms)
+ GET /proposals 200 in 422ms (next.js: 237ms, application-code: 185ms)
+ GET / 200 in 546ms (next.js: 10ms, application-code: 536ms)
+ GET /proposals 200 in 197ms (next.js: 121ms, application-code: 75ms)
+ GET / 200 in 434ms (next.js: 20ms, application-code: 414ms)
+ GET / 200 in 434ms (next.js: 103ms, application-code: 330ms)
+ GET / 200 in 426ms (next.js: 283ms, application-code: 143ms)
+✓ Compiled in 231ms
+ GET /proposals 200 in 887ms (next.js: 240ms, application-code: 647ms)
+ GET /proposals 200 in 121ms (next.js: 7ms, application-code: 114ms)
+ GET / 200 in 898ms (next.js: 617ms, application-code: 281ms)
+ GET / 200 in 125ms (next.js: 50ms, application-code: 75ms)
+ GET /proposals 200 in 149ms (next.js: 81ms, application-code: 69ms)
+ GET / 200 in 557ms (next.js: 228ms, application-code: 329ms)
+✓ Compiled in 233ms
+ GET /proposals 200 in 7.0s (next.js: 4.2s, application-code: 2.9s)
+ GET / 200 in 7.0s (next.js: 2.8s, application-code: 4.2s)
+ GET /proposals 200 in 1148ms (next.js: 539ms, application-code: 609ms)
+ GET / 200 in 1182ms (next.js: 827ms, application-code: 356ms)
+✓ Compiled in 1736ms
+ GET /proposals 200 in 3.4s (next.js: 821ms, application-code: 2.6s)
+ GET / 200 in 3.4s (next.js: 1572ms, application-code: 1822ms)
+✓ Compiled in 221ms
+ GET /proposals 200 in 840ms (next.js: 277ms, application-code: 562ms)
+ GET / 200 in 840ms (next.js: 688ms, application-code: 152ms)
+ GET /proposals 200 in 5.6s (next.js: 177ms, application-code: 5.4s)
+ GET / 200 in 1553ms (next.js: 164ms, application-code: 1389ms)
+ GET /catalog 200 in 1210ms (next.js: 931ms, application-code: 279ms)
+ GET /catalog?cat=%D0%9B%D1%8E%D1%81%D1%82%D1%80%D1%8B 200 in 162ms (next.js: 22ms, application-code: 140ms)
+ GET /catalog?cat=%D0%92%D1%81%D0%B5 200 in 133ms (next.js: 20ms, application-code: 113ms)
+ GET /catalog?room=living+room 200 in 94ms (next.js: 17ms, application-code: 77ms)
+ GET /catalog?room=living+room&cat=%D0%9B%D1%8E%D1%81%D1%82%D1%80%D1%8B 200 in 116ms (next.js: 14ms, application-code: 102ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 180ms (next.js: 15ms, application-code: 165ms)
+✓ Compiled in 834ms
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 1027ms (next.js: 476ms, application-code: 551ms)
+ GET / 200 in 252ms (next.js: 113ms, application-code: 139ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 1625ms (next.js: 457ms, application-code: 1168ms)
+ GET / 200 in 1640ms (next.js: 39ms, application-code: 1601ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 571ms (next.js: 440ms, application-code: 131ms)
+ GET / 200 in 576ms (next.js: 221ms, application-code: 355ms)
+ GET /catalog 200 in 3.1s (next.js: 11ms, application-code: 3.1s)
+✓ Compiled in 2.7s
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 4.2s (next.js: 1717ms, application-code: 2.5s)
+ GET /catalog 200 in 4.1s (next.js: 2.0s, application-code: 2.1s)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 1644ms (next.js: 31ms, application-code: 1613ms)
+ GET /catalog 200 in 1642ms (next.js: 109ms, application-code: 1533ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 1410ms (next.js: 20ms, application-code: 1390ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 1408ms (next.js: 178ms, application-code: 1230ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 1410ms (next.js: 120ms, application-code: 1290ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 1414ms (next.js: 69ms, application-code: 1344ms)
+ GET /catalog 200 in 1409ms (next.js: 361ms, application-code: 1048ms)
+ GET /catalog 200 in 1411ms (next.js: 1150ms, application-code: 261ms)
+ GET /catalog 200 in 1413ms (next.js: 1061ms, application-code: 352ms)
+ GET /catalog 200 in 1416ms (next.js: 862ms, application-code: 554ms)
+✓ Compiled in 434ms
+✓ Compiled in 1017ms
+ GET /catalog 200 in 3.1s (next.js: 1478ms, application-code: 1629ms)
+ GET /catalog 200 in 655ms (next.js: 117ms, application-code: 538ms)
+ GET /catalog?cat=%D0%9B%D1%8E%D1%81%D1%82%D1%80%D1%8B 200 in 333ms (next.js: 28ms, application-code: 306ms)
+ GET /catalog 200 in 252ms (next.js: 59ms, application-code: 192ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 3.3s (next.js: 1640ms, application-code: 1671ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 1002ms (next.js: 199ms, application-code: 803ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 695ms (next.js: 109ms, application-code: 586ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 694ms (next.js: 155ms, application-code: 539ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 693ms (next.js: 190ms, application-code: 503ms)
+ GET /catalog 200 in 1926ms (next.js: 26ms, application-code: 1900ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 510ms (next.js: 36ms, application-code: 474ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 704ms (next.js: 20ms, application-code: 684ms)
+ GET /catalog?cat=%D0%9B%D1%8E%D1%81%D1%82%D1%80%D1%8B 200 in 85ms (next.js: 18ms, application-code: 68ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 525ms (next.js: 22ms, application-code: 503ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 488ms (next.js: 9ms, application-code: 478ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 487ms (next.js: 57ms, application-code: 430ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 488ms (next.js: 118ms, application-code: 370ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 317ms (next.js: 18ms, application-code: 299ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 197ms (next.js: 11ms, application-code: 186ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 122ms (next.js: 10ms, application-code: 112ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 46ms (next.js: 7ms, application-code: 39ms)
+ GET /catalog?cat=%D0%9B%D1%8E%D1%81%D1%82%D1%80%D1%8B 200 in 50ms (next.js: 5ms, application-code: 44ms)
+ GET /catalog?cat=%D0%91%D1%80%D0%B0 200 in 32ms (next.js: 6ms, application-code: 26ms)
+ GET /catalog?cat=%D0%9F%D0%BE%D0%B4%D0%B2%D0%B5%D1%81%D1%8B 200 in 35ms (next.js: 4ms, application-code: 32ms)
+ GET /catalog?cat=%D0%A1%D0%BF%D0%BE%D1%82%D1%8B 200 in 52ms (next.js: 4ms, application-code: 48ms)
+ GET /catalog?cat=%D0%92%D1%81%D0%B5 200 in 33ms (next.js: 3ms, application-code: 30ms)
+ GET /catalog?cat=%D0%A1%D0%BF%D0%BE%D1%82%D1%8B 200 in 31ms (next.js: 5ms, application-code: 26ms)
+ GET /catalog?cat=%D0%92%D1%81%D0%B5 200 in 42ms (next.js: 5ms, application-code: 37ms)
+ GET /catalog 200 in 18ms (next.js: 5ms, application-code: 13ms)
+ GET /catalog 200 in 56ms (next.js: 5ms, application-code: 50ms)
+ GET /collections 200 in 447ms (next.js: 193ms, application-code: 253ms)
+ GET /collections/2 200 in 2.9s (next.js: 2.3s, generate-params: 2.0s, application-code: 529ms)
+✓ Compiled in 3.4s
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 8.5s (next.js: 1470ms, application-code: 7.0s)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 1281ms (next.js: 190ms, application-code: 1091ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 965ms (next.js: 478ms, application-code: 486ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 972ms (next.js: 64ms, application-code: 907ms)
+ GET /collections/2 200 in 8.6s (next.js: 2.1s, generate-params: 56ms, application-code: 6.5s)
+ GET /collections/2 200 in 349ms (next.js: 44ms, generate-params: 33µs, application-code: 305ms)
+ GET /collections/2 200 in 1953ms (next.js: 567ms, generate-params: 8ms, application-code: 1386ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 2.0s (next.js: 16ms, application-code: 1993ms)
+✓ Compiled in 209ms
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 4.4s (next.js: 341ms, application-code: 4.1s)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 3.2s (next.js: 2.3s, application-code: 986ms)
+ GET /collections/2 200 in 928ms (next.js: 187ms, generate-params: 11ms, application-code: 741ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 977ms (next.js: 283ms, application-code: 695ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 977ms (next.js: 393ms, application-code: 584ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 980ms (next.js: 343ms, application-code: 637ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 707ms (next.js: 12ms, application-code: 695ms)
+ GET /collections/2 200 in 675ms (next.js: 12ms, generate-params: 56µs, application-code: 663ms)
+ GET /collections/2 200 in 769ms (next.js: 13ms, generate-params: 37µs, application-code: 756ms)
+ GET /collections/2 200 in 765ms (next.js: 158ms, generate-params: 29µs, application-code: 608ms)
+ GET /collections/2 200 in 773ms (next.js: 65ms, generate-params: 41µs, application-code: 708ms)
+ GET /collections/2 200 in 773ms (next.js: 117ms, generate-params: 34µs, application-code: 656ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 572ms (next.js: 8ms, application-code: 564ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 527ms (next.js: 13ms, application-code: 514ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 1193ms (next.js: 116ms, application-code: 1077ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 1197ms (next.js: 12ms, application-code: 1185ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 1199ms (next.js: 64ms, application-code: 1135ms)
+ GET /collections/2 200 in 1042ms (next.js: 20ms, generate-params: 44µs, application-code: 1022ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 1141ms (next.js: 9ms, application-code: 1133ms)
+ GET /collections/2 200 in 1109ms (next.js: 8ms, generate-params: 52µs, application-code: 1101ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 1077ms (next.js: 20ms, application-code: 1057ms)
+ GET /collections/2 200 in 749ms (next.js: 35ms, generate-params: 7ms, application-code: 714ms)
+ GET /collections/2 200 in 750ms (next.js: 106ms, generate-params: 38µs, application-code: 644ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 815ms (next.js: 171ms, application-code: 644ms)
+ GET /collections/2 200 in 818ms (next.js: 302ms, generate-params: 171µs, application-code: 516ms)
+ GET /collections/2 200 in 824ms (next.js: 237ms, generate-params: 65µs, application-code: 587ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 421ms (next.js: 8ms, application-code: 412ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 427ms (next.js: 118ms, application-code: 309ms)
+ GET /collections/2 200 in 428ms (next.js: 10ms, generate-params: 46µs, application-code: 418ms)
+ GET /collections/2 200 in 344ms (next.js: 13ms, generate-params: 55µs, application-code: 330ms)
+ GET /collections/2 200 in 226ms (next.js: 11ms, generate-params: 45µs, application-code: 215ms)
+ GET /collections/2 200 in 223ms (next.js: 156ms, generate-params: 39µs, application-code: 67ms)
+ GET /collections/2 500 in 715ms (next.js: 338ms, application-code: 377ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 500 in 780ms (next.js: 729ms, application-code: 51ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 500 in 106ms (next.js: 47ms, application-code: 59ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 500 in 111ms (next.js: 79ms, application-code: 31ms)
+ GET /collections/2 500 in 116ms (next.js: 76ms, application-code: 40ms)
+ GET /collections/2 500 in 69ms (next.js: 55ms, application-code: 14ms)
+ GET /collections/2 500 in 16ms
+✓ Compiled in 807ms
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 1573ms (next.js: 476ms, application-code: 1097ms)
+ GET /collections/2 200 in 533ms (next.js: 343ms, generate-params: 16ms, application-code: 189ms)
+✓ Compiled in 309ms
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 732ms (next.js: 24ms, application-code: 708ms)
+ GET /catalog?room=living+room&cat=%D0%92%D1%81%D0%B5 200 in 507ms (next.js: 190ms, application-code: 317ms)
+ GET /collections/2 200 in 238ms (next.js: 45ms, generate-params: 8ms, application-code: 193ms)
+ GET /collections/2 200 in 108ms (next.js: 7ms, generate-params: 204µs, application-code: 102ms)
+ GET / 200 in 1115ms (next.js: 204ms, application-code: 911ms)
+ GET /catalog 200 in 317ms (next.js: 9ms, application-code: 308ms)
+ GET /proposals 200 in 4.3s (next.js: 1406ms, application-code: 2.9s)
+✓ Compiled in 1291ms
+ GET /proposals 200 in 3.3s (next.js: 1023ms, application-code: 2.3s)
+ GET /proposals 200 in 293ms (next.js: 32ms, application-code: 261ms)
+ GET /collections/2 200 in 861ms (next.js: 340ms, generate-params: 114ms, application-code: 521ms)
+ GET /collections/2 200 in 149ms (next.js: 21ms, generate-params: 357µs, application-code: 129ms)
+✓ Compiled in 2.2s
+✓ Compiled in 967ms
+ GET /proposals 200 in 834ms (next.js: 73ms, application-code: 761ms)
+ GET /proposals 200 in 340ms (next.js: 14ms, application-code: 326ms)
+ GET /collections/2 200 in 519ms (next.js: 16ms, generate-params: 7ms, application-code: 502ms)
+ GET /proposals 200 in 371ms (next.js: 13ms, application-code: 358ms)
+ GET /collections/2 200 in 597ms (next.js: 10ms, generate-params: 28µs, application-code: 587ms)
+ GET /proposals 200 in 572ms (next.js: 10ms, application-code: 562ms)
+ GET /proposals 200 in 574ms (next.js: 72ms, application-code: 502ms)
+ GET /proposals 200 in 434ms (next.js: 19ms, application-code: 416ms)
+ GET /proposals 200 in 357ms (next.js: 23ms, application-code: 333ms)
+ GET /proposals 200 in 372ms (next.js: 22ms, application-code: 351ms)
+ GET /proposals 200 in 578ms (next.js: 13ms, application-code: 565ms)
+ GET /collections/2 200 in 1523ms (next.js: 16ms, generate-params: 38µs, application-code: 1507ms)
+ GET /collections/2 200 in 1526ms (next.js: 126ms, generate-params: 163µs, application-code: 1399ms)
+ GET /collections/2 200 in 1345ms (next.js: 25ms, generate-params: 11ms, application-code: 1320ms)
+ GET /collections/2 200 in 1345ms (next.js: 116ms, generate-params: 40µs, application-code: 1228ms)
+ GET /collections/2 200 in 3.6s (next.js: 163ms, generate-params: 74µs, application-code: 3.4s)
+✓ Compiled in 1867ms
+ GET /collections/2 200 in 5.0s (next.js: 39ms, generate-params: 1953µs, application-code: 4.9s)
+ GET /collections/2 200 in 4.6s (next.js: 55ms, generate-params: 27ms, application-code: 4.6s)
+ GET /proposals 200 in 1084ms (next.js: 594ms, application-code: 490ms)
+ GET /proposals 200 in 281ms (next.js: 11ms, application-code: 270ms)
+ GET /collections/2 200 in 402ms (next.js: 45ms, generate-params: 8ms, application-code: 357ms)
+ GET /proposals 200 in 230ms (next.js: 8ms, application-code: 222ms)
+ GET /collections/2 200 in 363ms (next.js: 8ms, generate-params: 37µs, application-code: 355ms)
+ GET /proposals 200 in 304ms (next.js: 7ms, application-code: 297ms)
+ GET /proposals 200 in 257ms (next.js: 10ms, application-code: 247ms)
+ GET /proposals 200 in 358ms (next.js: 24ms, application-code: 334ms)
+ GET /proposals 200 in 295ms (next.js: 8ms, application-code: 287ms)
+ GET /proposals 200 in 242ms (next.js: 9ms, application-code: 233ms)
+ GET /proposals 200 in 301ms (next.js: 9ms, application-code: 292ms)
+ GET /proposals 200 in 297ms (next.js: 7ms, application-code: 290ms)
+ GET /proposals 200 in 304ms (next.js: 52ms, application-code: 251ms)
+ GET /proposals 200 in 273ms (next.js: 7ms, application-code: 266ms)
+ GET /collections/2 200 in 407ms (next.js: 6ms, generate-params: 81µs, application-code: 401ms)
+ GET /collections/2 200 in 418ms (next.js: 12ms, generate-params: 33µs, application-code: 407ms)
+ GET /collections/2 200 in 403ms (next.js: 7ms, generate-params: 59µs, application-code: 395ms)
+ GET /collections/2 200 in 404ms (next.js: 21ms, generate-params: 10ms, application-code: 383ms)
+ GET /collections/2 200 in 408ms (next.js: 94ms, generate-params: 43µs, application-code: 314ms)
+ GET /collections/2 200 in 344ms (next.js: 10ms, generate-params: 50µs, application-code: 334ms)
+ GET /collections/2 200 in 267ms (next.js: 7ms, generate-params: 41µs, application-code: 260ms)
+ GET /collections/2 200 in 214ms (next.js: 9ms, generate-params: 40µs, application-code: 205ms)
+ GET /collections/2 200 in 139ms (next.js: 9ms, generate-params: 74µs, application-code: 130ms)
+✓ Compiled in 110ms
+ GET /proposals 200 in 643ms (next.js: 217ms, application-code: 425ms)
+ GET /collections/2 200 in 1158ms (next.js: 40ms, generate-params: 57µs, application-code: 1118ms)
+ GET /proposals 200 in 406ms (next.js: 109ms, application-code: 297ms)
+ GET /collections/2 200 in 479ms (next.js: 30ms, generate-params: 8ms, application-code: 449ms)
+ GET /proposals 200 in 358ms (next.js: 12ms, application-code: 345ms)
+ GET /collections/2 200 in 391ms (next.js: 9ms, generate-params: 50µs, application-code: 382ms)
+ GET /proposals 200 in 393ms (next.js: 8ms, application-code: 385ms)
+ GET /proposals 200 in 398ms (next.js: 66ms, application-code: 333ms)
+ GET /proposals 200 in 422ms (next.js: 10ms, application-code: 411ms)
+ GET /collections/2 200 in 475ms (next.js: 10ms, generate-params: 45µs, application-code: 464ms)
+ GET /collections/2 200 in 397ms (next.js: 11ms, generate-params: 51µs, application-code: 386ms)
+ GET /collections/2 200 in 286ms (next.js: 12ms, generate-params: 58µs, application-code: 274ms)
+ GET /collections/2 200 in 143ms (next.js: 10ms, generate-params: 81µs, application-code: 133ms)
+ GET /catalog 200 in 775ms (next.js: 298ms, application-code: 478ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/1 404 in 1617ms (next.js: 475ms, application-code: 1141ms)
+ GET /proposals 200 in 2.4s (next.js: 34ms, application-code: 2.4s)
+ POST /proposals 500 in 1366ms (next.js: 13ms, application-code: 1353ms)
+  └─ ƒ saveProposal({"clientName":"Test Client","globalDiscount":0,"items":[],"...":"4 items not stringified"}) in 24ms src/app/proposals/actions.ts
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 852ms (next.js: 376ms, application-code: 476ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 872ms (next.js: 19ms, application-code: 853ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/c5249740-0471-4ea6-83f0-f9a2518fa725 500 in 483ms (next.js: 45ms, application-code: 438ms)
+ GET /catalog 200 in 467ms (next.js: 19ms, application-code: 448ms)
+ GET /proposals 200 in 295ms (next.js: 16ms, application-code: 279ms)
+ GET /catalog 200 in 374ms (next.js: 10ms, application-code: 364ms)
+ GET /catalog/lum-101 200 in 4.5s (next.js: 3.6s, generate-params: 59ms, application-code: 916ms)
+ GET /proposals 200 in 371ms (next.js: 15ms, application-code: 356ms)
+✓ Compiled in 1575ms
+ GET /proposals 200 in 1575ms (next.js: 79ms, application-code: 1496ms)
+ GET /proposals 200 in 563ms (next.js: 251ms, application-code: 312ms)
+ GET /collections/2 200 in 935ms (next.js: 238ms, generate-params: 10ms, application-code: 697ms)
+ GET /proposals 200 in 404ms (next.js: 67ms, application-code: 337ms)
+ GET /proposals 200 in 407ms (next.js: 11ms, application-code: 396ms)
+ GET /collections/2 200 in 1222ms (next.js: 12ms, generate-params: 618µs, application-code: 1210ms)
+ GET /collections/2 200 in 1154ms (next.js: 70ms, generate-params: 52µs, application-code: 1085ms)
+ GET /collections/2 200 in 644ms (next.js: 71ms, generate-params: 25ms, application-code: 573ms)
+✓ Compiled in 521ms
+ GET /proposals 200 in 659ms (next.js: 375ms, application-code: 284ms)
+ GET /collections/2 200 in 194ms (next.js: 63ms, generate-params: 17ms, application-code: 131ms)
+✓ Compiled in 163ms
+ GET /proposals 200 in 1005ms (next.js: 347ms, application-code: 658ms)
+ GET /proposals 200 in 819ms (next.js: 22ms, application-code: 797ms)
+ GET /collections/2 200 in 834ms (next.js: 180ms, generate-params: 19ms, application-code: 654ms)
+ GET /collections/2 200 in 391ms (next.js: 57ms, generate-params: 52µs, application-code: 334ms)
+✓ Compiled in 1535ms
+ GET /proposals 200 in 413ms (next.js: 7ms, application-code: 406ms)
+ GET /collections/2 200 in 1149ms (next.js: 25ms, generate-params: 15ms, application-code: 1124ms)
+ GET /proposals 200 in 853ms (next.js: 591ms, application-code: 262ms)
+ GET /collections/2 200 in 126ms (next.js: 36ms, generate-params: 59µs, application-code: 90ms)
+ GET /proposals 200 in 4.1s (next.js: 112ms, application-code: 4.0s)
+ GET / 200 in 5.7s (next.js: 2.4s, application-code: 3.3s)
+ GET /proposals 200 in 478ms (next.js: 100ms, application-code: 378ms)
+ GET /catalog 200 in 1935ms (next.js: 828ms, application-code: 1107ms)
+prisma:query SELECT 1
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`number` DESC LIMIT ? OFFSET ?
+prisma:query INSERT INTO `main`.`Proposal` (`id`, `number`, `projectName`, `clientName`, `clientPhone`, `clientEmail`, `managerName`, `date`, `validityPeriod`, `globalDiscount`, `items`, `notes`, `status`, `total`, `createdAt`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `number` AS `number`, `projectName` AS `projectName`, `clientName` AS `clientName`, `clientPhone` AS `clientPhone`, `clientEmail` AS `clientEmail`, `managerName` AS `managerName`, `date` AS `date`, `validityPeriod` AS `validityPeriod`, `globalDiscount` AS `globalDiscount`, `items` AS `items`, `notes` AS `notes`, `status` AS `status`, `total` AS `total`, `createdAt` AS `createdAt`
+prisma:query COMMIT
+ POST /proposals 200 in 2.2s (next.js: 109ms, application-code: 2.1s)
+  └─ ƒ saveProposal({"clientEmail":"","clientName":"Азамат","clientPhone":"+77015225635","...":"7 items not stringified"}) in 1020ms src/app/proposals/actions.ts
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`number` DESC LIMIT ? OFFSET ?
+prisma:query INSERT INTO `main`.`Proposal` (`id`, `number`, `projectName`, `clientName`, `clientPhone`, `clientEmail`, `managerName`, `date`, `validityPeriod`, `globalDiscount`, `items`, `notes`, `status`, `total`, `createdAt`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `number` AS `number`, `projectName` AS `projectName`, `clientName` AS `clientName`, `clientPhone` AS `clientPhone`, `clientEmail` AS `clientEmail`, `managerName` AS `managerName`, `date` AS `date`, `validityPeriod` AS `validityPeriod`, `globalDiscount` AS `globalDiscount`, `items` AS `items`, `notes` AS `notes`, `status` AS `status`, `total` AS `total`, `createdAt` AS `createdAt`
+prisma:query COMMIT
+ POST /proposals 200 in 415ms (next.js: 50ms, application-code: 365ms)
+  └─ ƒ saveProposal({"clientEmail":"","clientName":"Азамат","clientPhone":"+77015225635","...":"7 items not stringified"}) in 100ms src/app/proposals/actions.ts
+✓ Finished filesystem cache database compaction in 11.4s
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/dbfe5738-a7f2-473e-9761-b030b8a81a9f 500 in 6.7s (next.js: 1534ms, application-code: 5.2s)
+ GET / 200 in 422ms (next.js: 19ms, application-code: 403ms)
+ GET /proposals 200 in 326ms (next.js: 11ms, application-code: 315ms)
+ POST /proposals 500 in 687ms (next.js: 17ms, application-code: 670ms)
+  └─ ƒ saveProposal({"clientName":"Test ClientAudit Client 1","globalDiscount":0,"items":["[Object]"],"...":"4 items not stringified"}) in 6ms src/app/proposals/actions.ts
+prisma:query SELECT 1
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`number` DESC LIMIT ? OFFSET ?
+prisma:query INSERT INTO `main`.`Proposal` (`id`, `number`, `projectName`, `clientName`, `managerName`, `date`, `validityPeriod`, `globalDiscount`, `items`, `notes`, `status`, `total`, `createdAt`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `number` AS `number`, `projectName` AS `projectName`, `clientName` AS `clientName`, `clientPhone` AS `clientPhone`, `clientEmail` AS `clientEmail`, `managerName` AS `managerName`, `date` AS `date`, `validityPeriod` AS `validityPeriod`, `globalDiscount` AS `globalDiscount`, `items` AS `items`, `notes` AS `notes`, `status` AS `status`, `total` AS `total`, `createdAt` AS `createdAt`
+prisma:query COMMIT
+ POST /proposals 200 in 466ms (next.js: 15ms, application-code: 450ms)
+  └─ ƒ saveProposal({"clientName":"Test ClientAudit Client 1","globalDiscount":0,"items":["[Object]"],"...":"5 items not stringified"}) in 353ms src/app/proposals/actions.ts
+ GET / 200 in 259ms (next.js: 10ms, application-code: 248ms)
+ GET /proposals 200 in 96ms (next.js: 14ms, application-code: 82ms)
+✓ Compiled in 1834ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /proposals 200 in 417ms (next.js: 66ms, application-code: 351ms)
+ GET /admin/proposals 200 in 3.2s (next.js: 1027ms, application-code: 2.2s)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`number` DESC LIMIT ? OFFSET ?
+prisma:query INSERT INTO `main`.`Proposal` (`id`, `number`, `projectName`, `clientName`, `managerName`, `date`, `validityPeriod`, `globalDiscount`, `items`, `notes`, `status`, `total`, `createdAt`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `number` AS `number`, `projectName` AS `projectName`, `clientName` AS `clientName`, `clientPhone` AS `clientPhone`, `clientEmail` AS `clientEmail`, `managerName` AS `managerName`, `date` AS `date`, `validityPeriod` AS `validityPeriod`, `globalDiscount` AS `globalDiscount`, `items` AS `items`, `notes` AS `notes`, `status` AS `status`, `total` AS `total`, `createdAt` AS `createdAt`
+prisma:query COMMIT
+ POST /proposals 200 in 2.0s (next.js: 177ms, application-code: 1866ms)
+  └─ ƒ saveProposal({"clientName":"Test ClientAudit Client 1","globalDiscount":0,"items":["[Object]"],"...":"5 items not stringified"}) in 237ms src/app/proposals/actions.ts
+ GET /p/dbfe5738-a7f2-473e-9761-b030b8a81a9f 500 in 7.1s (next.js: 423ms, application-code: 6.7s)
+✓ Compiled in 8.5s
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /proposals 200 in 13.1s (next.js: 151ms, application-code: 13.0s)
+ GET /proposals 200 in 8.2s (next.js: 2.2s, application-code: 6.1s)
+ GET /proposals 200 in 5.6s (next.js: 1997ms, application-code: 3.6s)
+ GET /proposals 200 in 2.8s (next.js: 903ms, application-code: 1940ms)
+ GET /proposals 200 in 1902ms (next.js: 344ms, application-code: 1558ms)
+ GET /proposals 200 in 1911ms (next.js: 230ms, application-code: 1681ms)
+ GET /collections/2 200 in 3.7s (next.js: 956ms, generate-params: 35ms, application-code: 2.7s)
+ GET /proposals 200 in 1412ms (next.js: 157ms, application-code: 1255ms)
+ GET /proposals 200 in 1416ms (next.js: 73ms, application-code: 1343ms)
+ GET /proposals 200 in 1410ms (next.js: 227ms, application-code: 1183ms)
+ GET /proposals 200 in 489ms (next.js: 6ms, application-code: 483ms)
+ GET /p/43e3a183-9c0d-4217-9ed9-66e64969758f 200 in 2.2s (next.js: 100ms, application-code: 2.1s)
+ GET /p/dbfe5738-a7f2-473e-9761-b030b8a81a9f 200 in 8.8s (next.js: 3.5s, application-code: 5.3s)
+ GET /collections/2 200 in 616ms (next.js: 36ms, generate-params: 15ms, application-code: 580ms)
+ GET /collections/2 200 in 872ms (next.js: 23ms, generate-params: 98µs, application-code: 849ms)
+ GET /collections/2 200 in 497ms (next.js: 44ms, generate-params: 43µs, application-code: 453ms)
+ GET /collections/2 200 in 293ms (next.js: 43ms, generate-params: 143µs, application-code: 250ms)
+✓ Compiled in 956ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /proposals 200 in 6.6s (next.js: 4.9s, application-code: 1724ms)
+ GET /proposals 200 in 6.6s (next.js: 4.6s, application-code: 2.0s)
+ GET /proposals 200 in 1211ms (next.js: 520ms, application-code: 691ms)
+ GET /p/43e3a183-9c0d-4217-9ed9-66e64969758f 200 in 7.9s (next.js: 21ms, application-code: 7.9s)
+ GET /proposals 200 in 1217ms (next.js: 455ms, application-code: 762ms)
+ GET /collections/2 200 in 1269ms (next.js: 65ms, generate-params: 13ms, application-code: 1204ms)
+✓ Compiled in 294ms
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/43e3a183-9c0d-4217-9ed9-66e64969758f 200 in 3.4s (next.js: 595ms, application-code: 2.8s)
+ GET /proposals 200 in 2.7s (next.js: 117ms, application-code: 2.6s)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/dbfe5738-a7f2-473e-9761-b030b8a81a9f 200 in 3.8s (next.js: 250ms, application-code: 3.6s)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /proposals 200 in 3.3s (next.js: 1015ms, application-code: 2.2s)
+ GET /proposals 200 in 3.1s (next.js: 1458ms, application-code: 1649ms)
+ GET /proposals 200 in 3.2s (next.js: 1440ms, application-code: 1713ms)
+ GET /p/dbfe5738-a7f2-473e-9761-b030b8a81a9f 200 in 3.6s (next.js: 24ms, application-code: 3.6s)
+ GET /collections/2 200 in 3.2s (next.js: 143ms, generate-params: 53µs, application-code: 3.1s)
+ GET /p/43e3a183-9c0d-4217-9ed9-66e64969758f 200 in 3.1s (next.js: 1708ms, application-code: 1358ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/43e3a183-9c0d-4217-9ed9-66e64969758f 200 in 1508ms (next.js: 32ms, application-code: 1476ms)
+ GET /collections/2 200 in 1253ms (next.js: 72ms, generate-params: 9ms, application-code: 1181ms)
+ GET /proposals 200 in 984ms (next.js: 144ms, application-code: 840ms)
+ GET /p/dbfe5738-a7f2-473e-9761-b030b8a81a9f 200 in 3.9s (next.js: 187ms, application-code: 3.8s)
+ GET /p/dbfe5738-a7f2-473e-9761-b030b8a81a9f 200 in 3.8s (next.js: 1898ms, application-code: 1879ms)
+ GET /proposals 200 in 844ms (next.js: 15ms, application-code: 830ms)
+ GET /p/dbfe5738-a7f2-473e-9761-b030b8a81a9f 200 in 1398ms (next.js: 164ms, application-code: 1234ms)
+ GET /collections/2 200 in 624ms (next.js: 34ms, generate-params: 224µs, application-code: 590ms)
+ GET /p/43e3a183-9c0d-4217-9ed9-66e64969758f 200 in 761ms (next.js: 27ms, application-code: 735ms)
+ GET /collections/2 200 in 150ms (next.js: 10ms, generate-params: 66µs, application-code: 140ms)
+ GET /proposals 200 in 75ms (next.js: 8ms, application-code: 66ms)
+prisma:query SELECT 1
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`number` DESC LIMIT ? OFFSET ?
+prisma:query INSERT INTO `main`.`Proposal` (`id`, `number`, `projectName`, `clientName`, `managerName`, `date`, `validityPeriod`, `globalDiscount`, `items`, `notes`, `status`, `total`, `createdAt`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `number` AS `number`, `projectName` AS `projectName`, `clientName` AS `clientName`, `clientPhone` AS `clientPhone`, `clientEmail` AS `clientEmail`, `managerName` AS `managerName`, `date` AS `date`, `validityPeriod` AS `validityPeriod`, `globalDiscount` AS `globalDiscount`, `items` AS `items`, `notes` AS `notes`, `status` AS `status`, `total` AS `total`, `createdAt` AS `createdAt`
+prisma:query COMMIT
+ POST /proposals 200 in 240ms (next.js: 9ms, application-code: 232ms)
+  └─ ƒ saveProposal({"clientName":"Test ClientAudit Client 1","globalDiscount":0,"items":["[Object]"],"...":"5 items not stringified"}) in 79ms src/app/proposals/actions.ts
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`number` DESC LIMIT ? OFFSET ?
+prisma:query INSERT INTO `main`.`Proposal` (`id`, `number`, `projectName`, `clientName`, `managerName`, `date`, `validityPeriod`, `globalDiscount`, `items`, `notes`, `status`, `total`, `createdAt`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `number` AS `number`, `projectName` AS `projectName`, `clientName` AS `clientName`, `clientPhone` AS `clientPhone`, `clientEmail` AS `clientEmail`, `managerName` AS `managerName`, `date` AS `date`, `validityPeriod` AS `validityPeriod`, `globalDiscount` AS `globalDiscount`, `items` AS `items`, `notes` AS `notes`, `status` AS `status`, `total` AS `total`, `createdAt` AS `createdAt`
+prisma:query COMMIT
+ POST /proposals 200 in 719ms (next.js: 43ms, application-code: 677ms)
+  └─ ƒ saveProposal({"clientName":"Test ClientAudit Client 1","globalDiscount":0,"items":["[Object]"],"...":"5 items not stringified"}) in 85ms src/app/proposals/actions.ts
+ GET /p/2e54f28c-4006-4824-a233-f7e5f4d1e6a5/test-projectaudit-project-1 404 in 1808ms (next.js: 1052ms, application-code: 756ms)
+ GET /catalog 200 in 150ms (next.js: 103ms, application-code: 47ms)
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`number` DESC LIMIT ? OFFSET ?
+prisma:query INSERT INTO `main`.`Proposal` (`id`, `number`, `projectName`, `clientName`, `managerName`, `date`, `validityPeriod`, `globalDiscount`, `items`, `notes`, `status`, `total`, `createdAt`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `number` AS `number`, `projectName` AS `projectName`, `clientName` AS `clientName`, `clientPhone` AS `clientPhone`, `clientEmail` AS `clientEmail`, `managerName` AS `managerName`, `date` AS `date`, `validityPeriod` AS `validityPeriod`, `globalDiscount` AS `globalDiscount`, `items` AS `items`, `notes` AS `notes`, `status` AS `status`, `total` AS `total`, `createdAt` AS `createdAt`
+prisma:query COMMIT
+ POST /proposals 200 in 96ms (next.js: 10ms, application-code: 86ms)
+  └─ ƒ saveProposal({"clientName":"Test ClientAudit Client 1","globalDiscount":0,"items":["[Object]"],"...":"5 items not stringified"}) in 31ms src/app/proposals/actions.ts
+ GET /proposals 200 in 1235ms (next.js: 10ms, application-code: 1225ms)
+ GET /p/21542002-a542-4c5d-b6e4-7227e9ec159e/test-projectaudit-project-1 404 in 152ms (next.js: 17ms, application-code: 135ms)
+ GET /catalog?cat=%D0%91%D1%80%D0%B0 200 in 473ms (next.js: 92ms, application-code: 381ms)
+ GET /catalog?cat=%D0%9F%D0%BE%D0%B4%D0%B2%D0%B5%D1%81%D1%8B 200 in 165ms (next.js: 31ms, application-code: 134ms)
+ GET /catalog 200 in 990ms (next.js: 116ms, application-code: 875ms)
+ GET /catalog?cat=%D0%92%D1%81%D0%B5 200 in 296ms (next.js: 20ms, application-code: 276ms)
+ GET /catalog/lum-202 200 in 989ms (next.js: 596ms, generate-params: 71ms, application-code: 393ms)
+ GET /catalog?max=300000 200 in 231ms (next.js: 32ms, application-code: 200ms)
+ GET /proposals 200 in 270ms (next.js: 51ms, application-code: 218ms)
+prisma:query SELECT 1
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`number` DESC LIMIT ? OFFSET ?
+prisma:query INSERT INTO `main`.`Proposal` (`id`, `number`, `projectName`, `clientName`, `clientPhone`, `clientEmail`, `managerName`, `date`, `validityPeriod`, `globalDiscount`, `items`, `notes`, `status`, `total`, `createdAt`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `number` AS `number`, `projectName` AS `projectName`, `clientName` AS `clientName`, `clientPhone` AS `clientPhone`, `clientEmail` AS `clientEmail`, `managerName` AS `managerName`, `date` AS `date`, `validityPeriod` AS `validityPeriod`, `globalDiscount` AS `globalDiscount`, `items` AS `items`, `notes` AS `notes`, `status` AS `status`, `total` AS `total`, `createdAt` AS `createdAt`
+prisma:query COMMIT
+ POST /proposals 200 in 553ms (next.js: 44ms, application-code: 509ms)
+  └─ ƒ saveProposal({"clientEmail":"","clientName":"User","clientPhone":"","...":"7 items not stringified"}) in 245ms src/app/proposals/actions.ts
+ GET /p/003308af-e483-47f2-ae4a-31ccf91e87f9/test 404 in 1020ms (next.js: 96ms, application-code: 924ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/003308af-e483-47f2-ae4a-31ccf91e87f9 200 in 853ms (next.js: 66ms, application-code: 787ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 1399ms (next.js: 502ms, application-code: 897ms)
+ GET /proposals 200 in 244ms (next.js: 38ms, application-code: 207ms)
+ GET /proposals 200 in 216ms (next.js: 14ms, application-code: 202ms)
+ GET /p/003308af-e483-47f2-ae4a-31ccf91e87f9/test 404 in 289ms (next.js: 26ms, application-code: 263ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 880ms (next.js: 17ms, application-code: 864ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/003308af-e483-47f2-ae4a-31ccf91e87f9 200 in 575ms (next.js: 38ms, application-code: 537ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/003308af-e483-47f2-ae4a-31ccf91e87f9 200 in 624ms (next.js: 29ms, application-code: 595ms)
+ GET /p/003308af-e483-47f2-ae4a-31ccf91e87f9/test 404 in 370ms (next.js: 29ms, application-code: 341ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/003308af-e483-47f2-ae4a-31ccf91e87f9 200 in 381ms (next.js: 26ms, application-code: 355ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/dbfe5738-a7f2-473e-9761-b030b8a81a9f 200 in 1206ms (next.js: 86ms, application-code: 1120ms)
+ GET /proposals 200 in 273ms (next.js: 86ms, application-code: 187ms)
+✓ Compiled in 661ms
+✓ Compiled in 863ms
+✓ Compiled in 1065ms
+ GET /catalog 200 in 2.7s (next.js: 1259ms, application-code: 1458ms)
+ GET /proposals 200 in 2.1s (next.js: 914ms, application-code: 1210ms)
+prisma:query SELECT 1
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`number` DESC LIMIT ? OFFSET ?
+prisma:query INSERT INTO `main`.`Proposal` (`id`, `number`, `projectName`, `clientName`, `clientPhone`, `clientEmail`, `managerName`, `date`, `validityPeriod`, `globalDiscount`, `items`, `notes`, `status`, `total`, `createdAt`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `number` AS `number`, `projectName` AS `projectName`, `clientName` AS `clientName`, `clientPhone` AS `clientPhone`, `clientEmail` AS `clientEmail`, `managerName` AS `managerName`, `date` AS `date`, `validityPeriod` AS `validityPeriod`, `globalDiscount` AS `globalDiscount`, `items` AS `items`, `notes` AS `notes`, `status` AS `status`, `total` AS `total`, `createdAt` AS `createdAt`
+prisma:query COMMIT
+ POST /proposals 200 in 656ms (next.js: 13ms, application-code: 643ms)
+  └─ ƒ saveProposal({"clientEmail":"","clientName":"User","clientPhone":"","...":"7 items not stringified"}) in 188ms src/app/proposals/actions.ts
+○ Compiling /p/[id]/[[...slug]] ...
+ GET /p/6d9bd495-8925-4b50-914c-ad63a383e382/testtest-project 404 in 14.6s (next.js: 11.1s, application-code: 3.5s)
+ GET /p/6d9bd495-8925-4b50-914c-ad63a383e382/testtest-project 404 in 3.4s (next.js: 359ms, application-code: 3.1s)
+ GET /p/6d9bd495-8925-4b50-914c-ad63a383e382/testtest-project 404 in 11.8s (next.js: 1284ms, application-code: 10.5s)
+ GET /p/6d9bd495-8925-4b50-914c-ad63a383e382/testtest-project 404 in 821ms (next.js: 368ms, application-code: 453ms)
+ GET /p/6d9bd495-8925-4b50-914c-ad63a383e382 404 in 156ms (next.js: 21ms, application-code: 135ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 1324ms (next.js: 121ms, application-code: 1203ms)
+ GET / 200 in 807ms (next.js: 97ms, application-code: 710ms)
+ GET /catalog 200 in 1199ms (next.js: 50ms, application-code: 1149ms)
+ GET / 200 in 288ms (next.js: 10ms, application-code: 278ms)
+ GET /proposals 200 in 267ms (next.js: 43ms, application-code: 224ms)
+ GET /catalog 200 in 295ms (next.js: 16ms, application-code: 279ms)
+ GET /catalog/lum-101 200 in 636ms (next.js: 415ms, generate-params: 81ms, application-code: 221ms)
+ GET /proposals 200 in 381ms (next.js: 21ms, application-code: 360ms)
+prisma:query SELECT 1
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`number` DESC LIMIT ? OFFSET ?
+prisma:query INSERT INTO `main`.`Proposal` (`id`, `number`, `projectName`, `clientName`, `clientPhone`, `clientEmail`, `managerName`, `date`, `validityPeriod`, `globalDiscount`, `items`, `notes`, `status`, `total`, `createdAt`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `number` AS `number`, `projectName` AS `projectName`, `clientName` AS `clientName`, `clientPhone` AS `clientPhone`, `clientEmail` AS `clientEmail`, `managerName` AS `managerName`, `date` AS `date`, `validityPeriod` AS `validityPeriod`, `globalDiscount` AS `globalDiscount`, `items` AS `items`, `notes` AS `notes`, `status` AS `status`, `total` AS `total`, `createdAt` AS `createdAt`
+prisma:query COMMIT
+ POST /proposals 200 in 482ms (next.js: 17ms, application-code: 465ms)
+  └─ ƒ saveProposal({"clientEmail":"","clientName":"User","clientPhone":"","...":"7 items not stringified"}) in 260ms src/app/proposals/actions.ts
+ GET /p/f54bb35a-0b4d-40ff-93e3-bf56f8761989/testtest-project 404 in 659ms (next.js: 147ms, application-code: 512ms)
+ GET /p/f54bb35a-0b4d-40ff-93e3-bf56f8761989/testtest-project 404 in 1089ms (next.js: 39ms, application-code: 1050ms)
+ GET /proposals 200 in 2.4s (next.js: 85ms, application-code: 2.3s)
+ GET /proposals 200 in 136ms (next.js: 7ms, application-code: 130ms)
+ GET /catalog 200 in 857ms (next.js: 45ms, application-code: 812ms)
+ GET /proposals 200 in 185ms (next.js: 26ms, application-code: 159ms)
+prisma:query SELECT 1
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`number` DESC LIMIT ? OFFSET ?
+prisma:query INSERT INTO `main`.`Proposal` (`id`, `number`, `projectName`, `clientName`, `clientPhone`, `clientEmail`, `managerName`, `date`, `validityPeriod`, `globalDiscount`, `items`, `notes`, `status`, `total`, `createdAt`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `number` AS `number`, `projectName` AS `projectName`, `clientName` AS `clientName`, `clientPhone` AS `clientPhone`, `clientEmail` AS `clientEmail`, `managerName` AS `managerName`, `date` AS `date`, `validityPeriod` AS `validityPeriod`, `globalDiscount` AS `globalDiscount`, `items` AS `items`, `notes` AS `notes`, `status` AS `status`, `total` AS `total`, `createdAt` AS `createdAt`
+prisma:query COMMIT
+ POST /proposals 200 in 682ms (next.js: 23ms, application-code: 659ms)
+  └─ ƒ saveProposal({"clientEmail":"","clientName":"User","clientPhone":"","...":"7 items not stringified"}) in 239ms src/app/proposals/actions.ts
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 404 in 523ms (next.js: 92ms, application-code: 432ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 404 in 708ms (next.js: 46ms, application-code: 662ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 1143ms (next.js: 28ms, application-code: 1115ms)
+ GET /catalog 200 in 343ms (next.js: 19ms, application-code: 324ms)
+ GET / 200 in 1132ms (next.js: 38ms, application-code: 1094ms)
+ GET /api/products 404 in 269ms (next.js: 18ms, application-code: 251ms)
+ GET /catalog/lum-101 200 in 2.6s (next.js: 196ms, generate-params: 116ms, application-code: 2.4s)
+ GET /proposals 200 in 267ms (next.js: 25ms, application-code: 242ms)
+prisma:query SELECT 1
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`number` DESC LIMIT ? OFFSET ?
+prisma:query INSERT INTO `main`.`Proposal` (`id`, `number`, `projectName`, `clientName`, `clientPhone`, `clientEmail`, `managerName`, `date`, `validityPeriod`, `globalDiscount`, `items`, `notes`, `status`, `total`, `createdAt`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `number` AS `number`, `projectName` AS `projectName`, `clientName` AS `clientName`, `clientPhone` AS `clientPhone`, `clientEmail` AS `clientEmail`, `managerName` AS `managerName`, `date` AS `date`, `validityPeriod` AS `validityPeriod`, `globalDiscount` AS `globalDiscount`, `items` AS `items`, `notes` AS `notes`, `status` AS `status`, `total` AS `total`, `createdAt` AS `createdAt`
+prisma:query COMMIT
+ POST /proposals 200 in 586ms (next.js: 19ms, application-code: 567ms)
+  └─ ƒ saveProposal({"clientEmail":"","clientName":"User","clientPhone":"","...":"7 items not stringified"}) in 232ms src/app/proposals/actions.ts
+ GET /p/c1aa18a9-eba3-48fc-a0b3-1a76880b6934/testtest-project 404 in 302ms (next.js: 41ms, application-code: 262ms)
+ GET /p/c1aa18a9-eba3-48fc-a0b3-1a76880b6934/testtest-project 404 in 252ms (next.js: 40ms, application-code: 212ms)
+ GET /p/c1aa18a9-eba3-48fc-a0b3-1a76880b6934 404 in 441ms (next.js: 83ms, application-code: 357ms)
+ GET /p/c1aa18a9-eba3-48fc-a0b3-1a76880b6934/testtest-project 404 in 514ms (next.js: 40ms, application-code: 474ms)
+ GET /p/c1aa18a9-eba3-48fc-a0b3-1a76880b6934/testtest-project 404 in 207ms (next.js: 30ms, application-code: 178ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 288ms (next.js: 27ms, application-code: 261ms)
+ GET / 200 in 961ms (next.js: 45ms, application-code: 916ms)
+ GET /catalog 200 in 1483ms (next.js: 50ms, application-code: 1433ms)
+✓ Compiled in 1045ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+▲ Next.js 16.2.4 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.201:3000
+✓ Ready in 1516ms
+
+○ Compiling /admin/proposals ...
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 5.7s (next.js: 3.0s, application-code: 2.7s)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE `main`.`Proposal`.`id` IN (?,?) LIMIT ? OFFSET ?
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 6.6s (next.js: 6.0s, application-code: 567ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 6.6s (next.js: 6.0s, application-code: 574ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 223ms (next.js: 108ms, application-code: 115ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/c1aa18a9-eba3-48fc-a0b3-1a76880b6934 200 in 389ms (next.js: 23ms, application-code: 366ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /catalog 200 in 1157ms (next.js: 154ms, application-code: 1003ms)
+ GET /catalog 200 in 147ms (next.js: 36ms, application-code: 111ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /p/c1aa18a9-eba3-48fc-a0b3-1a76880b6934 200 in 1322ms (next.js: 265ms, application-code: 1057ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 1171ms (next.js: 342ms, application-code: 829ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /p/c1aa18a9-eba3-48fc-a0b3-1a76880b6934 200 in 734ms (next.js: 14ms, application-code: 720ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 2.7s (next.js: 195ms, application-code: 2.5s)
+ GET /admin/proposals 200 in 1995ms (next.js: 265ms, application-code: 1730ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 886ms (next.js: 54ms, application-code: 832ms)
+ GET /p/c1aa18a9-eba3-48fc-a0b3-1a76880b6934 200 in 592ms (next.js: 10ms, application-code: 582ms)
+ GET /catalog 200 in 409ms (next.js: 29ms, application-code: 379ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 1780ms (next.js: 19ms, application-code: 1761ms)
+ GET /admin/proposals 200 in 1581ms (next.js: 18ms, application-code: 1563ms)
+ GET /p/c1aa18a9-eba3-48fc-a0b3-1a76880b6934 200 in 750ms (next.js: 113ms, application-code: 637ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 404ms (next.js: 32ms, application-code: 371ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 1092ms (next.js: 604ms, application-code: 488ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /catalog 200 in 3.5s (next.js: 890ms, application-code: 2.6s)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /catalog 200 in 1913ms (next.js: 216ms, application-code: 1696ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 3.7s (next.js: 1260ms, application-code: 2.5s)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 1754ms (next.js: 1030ms, application-code: 724ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 4.2s (next.js: 1080ms, application-code: 3.1s)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 2.5s (next.js: 27ms, application-code: 2.5s)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 1016ms (next.js: 21ms, application-code: 995ms)
+ GET /admin/proposals 200 in 827ms (next.js: 11ms, application-code: 817ms)
+ GET /admin/proposals 200 in 754ms (next.js: 17ms, application-code: 737ms)
+ GET /admin/proposals 200 in 607ms (next.js: 10ms, application-code: 598ms)
+ GET /catalog 200 in 243ms (next.js: 13ms, application-code: 230ms)
+ GET /catalog 200 in 237ms (next.js: 8ms, application-code: 229ms)
+ GET /catalog 200 in 238ms (next.js: 44ms, application-code: 194ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /catalog 200 in 297ms (next.js: 6ms, application-code: 291ms)
+ GET /catalog 200 in 293ms (next.js: 7ms, application-code: 287ms)
+ GET /admin/proposals 200 in 823ms (next.js: 7ms, application-code: 816ms)
+ GET /catalog 200 in 247ms (next.js: 9ms, application-code: 238ms)
+ GET /admin/proposals 200 in 757ms (next.js: 6ms, application-code: 751ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /catalog 200 in 389ms (next.js: 6ms, application-code: 383ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 434ms (next.js: 18ms, application-code: 416ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 377ms (next.js: 14ms, application-code: 363ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 346ms (next.js: 11ms, application-code: 335ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 355ms (next.js: 63ms, application-code: 291ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 406ms (next.js: 8ms, application-code: 398ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 1039ms (next.js: 43ms, application-code: 996ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 561ms (next.js: 12ms, application-code: 549ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 500ms (next.js: 19ms, application-code: 481ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 587ms (next.js: 7ms, application-code: 579ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 538ms (next.js: 12ms, application-code: 525ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 613ms (next.js: 11ms, application-code: 602ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 532ms (next.js: 21ms, application-code: 512ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /catalog 200 in 599ms (next.js: 56ms, application-code: 543ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /catalog 200 in 397ms (next.js: 10ms, application-code: 387ms)
+ GET /catalog 200 in 121ms (next.js: 7ms, application-code: 114ms)
+ GET /catalog 200 in 78ms (next.js: 7ms, application-code: 71ms)
+ GET /admin/proposals 200 in 842ms (next.js: 9ms, application-code: 833ms)
+ GET /admin/proposals 200 in 637ms (next.js: 9ms, application-code: 628ms)
+ GET /admin/proposals 200 in 436ms (next.js: 7ms, application-code: 429ms)
+ GET /admin/proposals 200 in 367ms (next.js: 74ms, application-code: 293ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /catalog 200 in 1058ms (next.js: 214ms, application-code: 844ms)
+ GET /catalog 200 in 600ms (next.js: 209ms, application-code: 391ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 922ms (next.js: 92ms, application-code: 830ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 1563ms (next.js: 100ms, application-code: 1463ms)
+ GET /admin/proposals 200 in 1102ms (next.js: 13ms, application-code: 1089ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 910ms (next.js: 24ms, application-code: 886ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 829ms (next.js: 15ms, application-code: 814ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 912ms (next.js: 7ms, application-code: 905ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 927ms (next.js: 15ms, application-code: 912ms)
+ GET /catalog 200 in 249ms (next.js: 8ms, application-code: 240ms)
+ GET /catalog 200 in 152ms (next.js: 8ms, application-code: 144ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 329ms (next.js: 72ms, application-code: 257ms)
+ GET /admin/proposals 200 in 1060ms (next.js: 17ms, application-code: 1043ms)
+ GET /catalog 200 in 223ms (next.js: 6ms, application-code: 217ms)
+ GET /admin/proposals 200 in 997ms (next.js: 100ms, application-code: 897ms)
+ GET /catalog 200 in 357ms (next.js: 9ms, application-code: 348ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /catalog 200 in 371ms (next.js: 60ms, application-code: 311ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 1125ms (next.js: 26ms, application-code: 1100ms)
+ GET /catalog 200 in 375ms (next.js: 10ms, application-code: 364ms)
+ GET /catalog 200 in 319ms (next.js: 12ms, application-code: 307ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 655ms (next.js: 8ms, application-code: 647ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 625ms (next.js: 9ms, application-code: 617ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 522ms (next.js: 13ms, application-code: 510ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 390ms (next.js: 20ms, application-code: 369ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 389ms (next.js: 86ms, application-code: 304ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 214ms (next.js: 18ms, application-code: 196ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 99ms (next.js: 6ms, application-code: 92ms)
+✓ Compiled in 1389ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /catalog 200 in 1802ms (next.js: 153ms, application-code: 1650ms)
+ GET /catalog 200 in 1039ms (next.js: 74ms, application-code: 965ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /catalog 200 in 1916ms (next.js: 92ms, application-code: 1825ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 1430ms (next.js: 327ms, application-code: 1103ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 2.0s (next.js: 117ms, application-code: 1914ms)
+ GET /admin/proposals 200 in 2.8s (next.js: 260ms, application-code: 2.5s)
+ GET /admin/proposals 200 in 1084ms (next.js: 8ms, application-code: 1076ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 1367ms (next.js: 97ms, application-code: 1270ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 1350ms (next.js: 7ms, application-code: 1343ms)
+ GET /admin/proposals 200 in 1350ms (next.js: 78ms, application-code: 1272ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 1057ms (next.js: 10ms, application-code: 1047ms)
+ GET /admin/proposals 200 in 1058ms (next.js: 90ms, application-code: 968ms)
+ GET /admin/proposals 200 in 742ms (next.js: 6ms, application-code: 736ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 877ms (next.js: 6ms, application-code: 871ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 851ms (next.js: 10ms, application-code: 841ms)
+ GET /admin/proposals 200 in 851ms (next.js: 73ms, application-code: 779ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 134ms (next.js: 17ms, application-code: 117ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /admin/proposals 200 in 962ms (next.js: 6ms, application-code: 956ms)
+ GET /admin/proposals 200 in 962ms (next.js: 55ms, application-code: 907ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 378ms (next.js: 10ms, application-code: 368ms)
+ GET /admin/proposals 200 in 650ms (next.js: 8ms, application-code: 643ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 543ms (next.js: 10ms, application-code: 534ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 520ms (next.js: 8ms, application-code: 512ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 522ms (next.js: 11ms, application-code: 511ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 523ms (next.js: 75ms, application-code: 448ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 396ms (next.js: 29ms, application-code: 367ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 376ms (next.js: 65ms, application-code: 311ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 541ms (next.js: 6ms, application-code: 536ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 461ms (next.js: 6ms, application-code: 455ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 381ms (next.js: 11ms, application-code: 370ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 384ms (next.js: 55ms, application-code: 328ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 278ms (next.js: 50ms, application-code: 228ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 252ms (next.js: 82ms, application-code: 170ms)
+✓ Compiled in 165ms
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /catalog 200 in 873ms (next.js: 198ms, application-code: 675ms)
+ GET /catalog 200 in 529ms (next.js: 71ms, application-code: 458ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 541ms (next.js: 136ms, application-code: 406ms)
+ GET /p/b2290c0a-7d43-4530-b11d-8f5d32af88d2/testtest-project 200 in 152ms (next.js: 10ms, application-code: 142ms)
+ GET /admin/proposals 200 in 927ms (next.js: 59ms, application-code: 868ms)
+ GET /admin/proposals 200 in 582ms (next.js: 12ms, application-code: 569ms)
+ GET /catalog 200 in 332ms (next.js: 9ms, application-code: 322ms)
+ GET /catalog 200 in 132ms (next.js: 7ms, application-code: 125ms)
+ GET /catalog 200 in 130ms (next.js: 8ms, application-code: 122ms)
+ GET /catalog/lum-101 200 in 2.6s (next.js: 2.3s, generate-params: 2.0s, application-code: 252ms)
+ GET /proposals 200 in 1099ms (next.js: 395ms, application-code: 704ms)
+prisma:query SELECT 1
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`number` DESC LIMIT ? OFFSET ?
+prisma:query INSERT INTO `main`.`Proposal` (`id`, `number`, `projectName`, `clientName`, `clientPhone`, `clientEmail`, `managerName`, `date`, `validityPeriod`, `globalDiscount`, `items`, `notes`, `status`, `total`, `createdAt`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `number` AS `number`, `projectName` AS `projectName`, `clientName` AS `clientName`, `clientPhone` AS `clientPhone`, `clientEmail` AS `clientEmail`, `managerName` AS `managerName`, `date` AS `date`, `validityPeriod` AS `validityPeriod`, `globalDiscount` AS `globalDiscount`, `items` AS `items`, `notes` AS `notes`, `status` AS `status`, `total` AS `total`, `createdAt` AS `createdAt`
+prisma:query COMMIT
+ POST /proposals 200 in 798ms (next.js: 46ms, application-code: 752ms)
+  └─ ƒ saveProposal({"clientEmail":"","clientName":"UserIvan Ivanov","clientPhone":"","...":"7 items not stringified"}) in 258ms src/app/proposals/actions.ts
+ GET /proposals 200 in 118ms (next.js: 13ms, application-code: 104ms)
+prisma:query SELECT 1
+prisma:query BEGIN IMMEDIATE
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE 1=1 ORDER BY `main`.`Proposal`.`number` DESC LIMIT ? OFFSET ?
+prisma:query INSERT INTO `main`.`Proposal` (`id`, `number`, `projectName`, `clientName`, `clientPhone`, `clientEmail`, `managerName`, `date`, `validityPeriod`, `globalDiscount`, `items`, `notes`, `status`, `total`, `createdAt`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `number` AS `number`, `projectName` AS `projectName`, `clientName` AS `clientName`, `clientPhone` AS `clientPhone`, `clientEmail` AS `clientEmail`, `managerName` AS `managerName`, `date` AS `date`, `validityPeriod` AS `validityPeriod`, `globalDiscount` AS `globalDiscount`, `items` AS `items`, `notes` AS `notes`, `status` AS `status`, `total` AS `total`, `createdAt` AS `createdAt`
+prisma:query COMMIT
+ POST /proposals 200 in 294ms (next.js: 30ms, application-code: 264ms)
+  └─ ƒ saveProposal({"clientEmail":"","clientName":"UserIvan Ivanov","clientPhone":"","...":"7 items not stringified"}) in 66ms src/app/proposals/actions.ts
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/137feb47-e274-4f96-a820-e4fc434fb6c5/testtest-project 200 in 760ms (next.js: 158ms, application-code: 603ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/137feb47-e274-4f96-a820-e4fc434fb6c5/testtest-project 200 in 1291ms (next.js: 27ms, application-code: 1264ms)
+✓ Compiled in 511ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /proposals 200 in 1093ms (next.js: 283ms, application-code: 809ms)
+ GET /proposals 200 in 393ms (next.js: 222ms, application-code: 171ms)
+ GET /p/137feb47-e274-4f96-a820-e4fc434fb6c5/testtest-project 200 in 1105ms (next.js: 514ms, application-code: 591ms)
+ GET /p/137feb47-e274-4f96-a820-e4fc434fb6c5/testtest-project 200 in 393ms (next.js: 20ms, application-code: 373ms)
+✓ Compiled in 84ms
+✓ Compiled in 233ms
+prisma:query SELECT 1
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /proposals 200 in 1494ms (next.js: 304ms, application-code: 1190ms)
+ GET /proposals 200 in 761ms (next.js: 130ms, application-code: 631ms)
+ GET /proposals 200 in 640ms (next.js: 258ms, application-code: 382ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /proposals 200 in 665ms (next.js: 326ms, application-code: 339ms)
+ GET /proposals 200 in 670ms (next.js: 377ms, application-code: 294ms)
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Proposal`.`id`, `main`.`Proposal`.`number`, `main`.`Proposal`.`projectName`, `main`.`Proposal`.`clientName`, `main`.`Proposal`.`clientPhone`, `main`.`Proposal`.`clientEmail`, `main`.`Proposal`.`managerName`, `main`.`Proposal`.`date`, `main`.`Proposal`.`validityPeriod`, `main`.`Proposal`.`globalDiscount`, `main`.`Proposal`.`items`, `main`.`Proposal`.`notes`, `main`.`Proposal`.`status`, `main`.`Proposal`.`total`, `main`.`Proposal`.`createdAt` FROM `main`.`Proposal` WHERE (`main`.`Proposal`.`id` = ? AND 1=1) LIMIT ? OFFSET ?
+ GET /p/137feb47-e274-4f96-a820-e4fc434fb6c5/testtest-project 200 in 1149ms (next.js: 128ms, application-code: 1021ms)
+ GET /p/137feb47-e274-4f96-a820-e4fc434fb6c5/testtest-project 200 in 602ms (next.js: 8ms, application-code: 595ms)
+ GET /p/137feb47-e274-4f96-a820-e4fc434fb6c5/testtest-project 200 in 403ms (next.js: 123ms, application-code: 280ms)
+ GET /p/137feb47-e274-4f96-a820-e4fc434fb6c5/testtest-project 200 in 407ms (next.js: 14ms, application-code: 393ms)
+ GET /p/137feb47-e274-4f96-a820-e4fc434fb6c5/testtest-project 200 in 403ms (next.js: 231ms, application-code: 171ms)
+[?25h

@@ -1,0 +1,1371 @@
+[browser] Image with src "/images/products/spot.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/images/products/spot.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/images/products/spot.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/images/products/spot.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/images/products/spot.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/images/products/spot.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+⨯ ./src/app/catalog/page.tsx:4:1
+Module not found: Can't resolve '@/lib/data-fetching'
+  [90m2 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/commerce/product-card"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSidebarFilters[0m } [36mfrom[0m [32m"@/components/commerce/sidebar-filters"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { getProductsFromDb } [36mfrom[0m [32m"@/lib/data-fetching"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mCatalogHeader[0m } [36mfrom[0m [32m"@/components/commerce/catalog-header"[0m;
+  [90m6 |[0m
+  [90m7 |[0m [36mconst[0m chips = [[32m"Все"[0m, [32m"Люстры"[0m, [32m"Бра"[0m, [32m"Подвесы"[0m, [32m"Споты"[0m];
+
+Import map: aliased to relative './src/lib/data-fetching' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/catalog/page.tsx:4:1
+Module not found: Can't resolve '@/lib/data-fetching'
+  [90m2 |[0m [36mimport[0m { [33mProductCard[0m } [36mfrom[0m [32m"@/components/commerce/product-card"[0m;
+  [90m3 |[0m [36mimport[0m { [33mSidebarFilters[0m } [36mfrom[0m [32m"@/components/commerce/sidebar-filters"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { getProductsFromDb } [36mfrom[0m [32m"@/lib/data-fetching"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m [36mimport[0m { [33mCatalogHeader[0m } [36mfrom[0m [32m"@/components/commerce/catalog-header"[0m;
+  [90m6 |[0m
+  [90m7 |[0m [36mconst[0m chips = [[32m"Все"[0m, [32m"Люстры"[0m, [32m"Бра"[0m, [32m"Подвесы"[0m, [32m"Споты"[0m];
+
+Import map: aliased to relative './src/lib/data-fetching' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/catalog/[id]/page.tsx:8:1
+Module not found: Can't resolve '@/lib/data-fetching'
+  [90m 6 |[0m [36mimport[0m { [33mRoleActionButton[0m } [36mfrom[0m [32m"@/components/commerce/role-action-button"[0m;
+  [90m 7 |[0m [36mimport[0m { mountingLabels, roomLabels, styleLabels } [36mfrom[0m [32m"@/lib/demo-data"[0m;
+[31m[1m>[0m [90m 8 |[0m [36mimport[0m { getProductByIdFromDb, getRelatedProductsFromDb } [36mfrom[0m [32m"@/lib/data-fetching"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 9 |[0m [36mimport[0m { formatPrice } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m10 |[0m [36mimport[0m { [33mChevronRight[0m, [33mCircleCheck[0m, [33mLampDesk[0m, [33mRuler[0m, [33mShieldCheck[0m, [33mSparkles[0m } [36mfrom[0m [32m"lucide-...[0m
+  [90m11 |[0m [36mimport[0m { prisma } [36mfrom[0m [32m"@/lib/prisma"[0m;
+
+Import map: aliased to relative './src/lib/data-fetching' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/catalog/[id]/page.tsx:8:1
+Module not found: Can't resolve '@/lib/data-fetching'
+  [90m 6 |[0m [36mimport[0m { [33mRoleActionButton[0m } [36mfrom[0m [32m"@/components/commerce/role-action-button"[0m;
+  [90m 7 |[0m [36mimport[0m { mountingLabels, roomLabels, styleLabels } [36mfrom[0m [32m"@/lib/demo-data"[0m;
+[31m[1m>[0m [90m 8 |[0m [36mimport[0m { getProductByIdFromDb, getRelatedProductsFromDb } [36mfrom[0m [32m"@/lib/data-fetching"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 9 |[0m [36mimport[0m { formatPrice } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m10 |[0m [36mimport[0m { [33mChevronRight[0m, [33mCircleCheck[0m, [33mLampDesk[0m, [33mRuler[0m, [33mShieldCheck[0m, [33mSparkles[0m } [36mfrom[0m [32m"lucide-...[0m
+  [90m11 |[0m [36mimport[0m { prisma } [36mfrom[0m [32m"@/lib/prisma"[0m;
+
+Import map: aliased to relative './src/lib/data-fetching' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/app/catalog/[id]/page.tsx:8:1
+Module not found: Can't resolve '@/lib/data-fetching'
+  [90m 6 |[0m [36mimport[0m { [33mRoleActionButton[0m } [36mfrom[0m [32m"@/components/commerce/role-action-button"[0m;
+  [90m 7 |[0m [36mimport[0m { mountingLabels, roomLabels, styleLabels } [36mfrom[0m [32m"@/lib/demo-data"[0m;
+[31m[1m>[0m [90m 8 |[0m [36mimport[0m { getProductByIdFromDb, getRelatedProductsFromDb } [36mfrom[0m [32m"@/lib/data-fetching"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m 9 |[0m [36mimport[0m { formatPrice } [36mfrom[0m [32m"@/lib/utils"[0m;
+  [90m10 |[0m [36mimport[0m { [33mChevronRight[0m, [33mCircleCheck[0m, [33mLampDesk[0m, [33mRuler[0m, [33mShieldCheck[0m, [33mSparkles[0m } [36mfrom[0m [32m"lucide-...[0m
+  [90m11 |[0m [36mimport[0m { prisma } [36mfrom[0m [32m"@/lib/prisma"[0m;
+
+Import map: aliased to relative './src/lib/data-fetching' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ The requested resource isn't a valid image for /haydi/haydi-pendant.jpg received null
+⨯ The requested resource isn't a valid image for /haydi/haydi-hero-chandelier.jpg received null
+⨯ The requested resource isn't a valid image for /haydi/haydi-track.jpg received null
+Error: The requested resource isn't a valid image.
+    at ignore-listed frames {
+  statusCode: 400
+}
+⨯ The requested resource isn't a valid image for /haydi/haydi-pendant.jpg received null
+⨯ The requested resource isn't a valid image for /haydi/haydi-track.jpg received null
+⨯ The requested resource isn't a valid image for /haydi/haydi-pendant.jpg received null
+⨯ The requested resource isn't a valid image for /haydi/haydi-track.jpg received null
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="proposals/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/proposals" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="page" pagePath="proposals/...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function ProposalsPage} serverProvidedParams={{...}}>
+                  <ProposalsPage params={Promise} searchParams={Promise}>
+                    <div className="mx-auto ma...">
+                      <div>
+                      <div className="mb-10 grid...">
+                        <Card>
+                        <Card className="flex flex-...">
+                          <div className="rounded-[4...">
+                            <div>
+                              <div>
+                              <div className="mt-2 text-4xl font-bold text-[#D4C3B3]">
++                               7 671 342 ₸
+-                               0 ₸
+                              ...
+                            ...
+                      ...
+              ...
+            ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProposalsPage (src/app/proposals/page.tsx:247:13)
+  245 |           <div>
+  246 |             <div className="text-xs font-bold uppercase tracking-widest text-[#A66A3F]">И...
+> 247 |             <div className="mt-2 text-4xl font-bold text-[#D4C3B3]">{formatPrice(getTotal...
+      |             ^
+  248 |             <div className="mt-4">
+  249 |               <div className="mb-2 text-xs font-bold uppercase tracking-widest text-[#B49...
+  250 |               <InlineNumber dark value={globalDiscount} suffix="%" onChange={setGlobalDis...
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="proposals/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/proposals" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="page" pagePath="proposals/...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function ProposalsPage} serverProvidedParams={{...}}>
+                  <ProposalsPage params={Promise} searchParams={Promise}>
+                    <div className="mx-auto ma...">
+                      <div>
+                      <div className="mb-10 grid...">
+                        <Card>
+                        <Card className="flex flex-...">
+                          <div className="rounded-[4...">
+                            <div>
+                              <div>
+                              <div className="mt-2 text-4xl font-bold text-[#D4C3B3]">
++                               2 601 400 ₸
+-                               0 ₸
+                              ...
+                            ...
+                      ...
+              ...
+            ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProposalsPage (src/app/proposals/page.tsx:247:13)
+  245 |           <div>
+  246 |             <div className="text-xs font-bold uppercase tracking-widest text-[#A66A3F]">И...
+> 247 |             <div className="mt-2 text-4xl font-bold text-[#D4C3B3]">{formatPrice(getTotal...
+      |             ^
+  248 |             <div className="mt-4">
+  249 |               <div className="mb-2 text-xs font-bold uppercase tracking-widest text-[#B49...
+  250 |               <InlineNumber dark value={globalDiscount} suffix="%" onChange={setGlobalDis...
+[browser] Uncaught ReferenceError: MetricCell is not defined
+    at eval (src/app/proposals/page.tsx:360:28)
+    at Array.map (<anonymous>)
+    at ProposalsPage (src/app/proposals/page.tsx:311:28)
+    at Set.forEach (<anonymous>)
+  358 |                         </td>
+  359 |                         <td className="border-t border-[rgba(166,106,63,0.18)] px-3 py-4">
+> 360 |                           <MetricCell
+      |                            ^
+  361 |                             value={item.stock > 0 ? `${item.stock} шт.` : "Под заказ"}
+  362 |                             accent={item.stock > 0 ? "success" : "default"}
+  363 |                           />
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[browser] Uncaught ReferenceError: MetricCell is not defined
+    at eval (src/app/proposals/page.tsx:360:28)
+    at Array.map (<anonymous>)
+    at ProposalsPage (src/app/proposals/page.tsx:311:28)
+    at Set.forEach (<anonymous>)
+  358 |                         </td>
+  359 |                         <td className="border-t border-[rgba(166,106,63,0.18)] px-3 py-4">
+> 360 |                           <MetricCell
+      |                            ^
+  361 |                             value={item.stock > 0 ? `${item.stock} шт.` : "Под заказ"}
+  362 |                             accent={item.stock > 0 ? "success" : "default"}
+  363 |                           />
+[browser] Image with src "/lumain/haydi-pendant.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/lumain/haydi-hero-chandelier.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "/lumain/haydi-track.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "/lumain/haydi-pendant.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="proposals/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/proposals" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="page" pagePath="proposals/...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function ProposalsPage} serverProvidedParams={{...}}>
+                  <ProposalsPage params={Promise} searchParams={Promise}>
+                    <div className="mx-auto ma...">
+                      <div>
+                      <div className="mb-10 grid...">
+                        <Card>
+                        <Card className="flex flex-...">
+                          <div className="rounded-[4...">
+                            <div>
+                              <div>
+                              <div className="mt-2 text-4xl font-bold text-[#D4C3B3]">
++                               7 671 342 ₸
+-                               0 ₸
+                              ...
+                            ...
+                      ...
+              ...
+            ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProposalsPage (src/app/proposals/page.tsx:247:13)
+  245 |           <div>
+  246 |             <div className="text-xs font-bold uppercase tracking-widest text-[#A66A3F]">И...
+> 247 |             <div className="mt-2 text-4xl font-bold text-[#D4C3B3]">{formatPrice(getTotal...
+      |             ^
+  248 |             <div className="mt-4">
+  249 |               <div className="mb-2 text-xs font-bold uppercase tracking-widest text-[#B49...
+  250 |               <InlineNumber dark value={globalDiscount} suffix="%" onChange={setGlobalDis...
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="proposals/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/proposals" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="page" pagePath="proposals/...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function ProposalsPage} serverProvidedParams={{...}}>
+                  <ProposalsPage params={Promise} searchParams={Promise}>
+                    <div className="mx-auto ma...">
+                      <div>
+                      <div className="mb-10 grid...">
+                        <Card>
+                        <Card className="flex flex-...">
+                          <div className="rounded-[4...">
+                            <div>
+                              <div>
+                              <div className="mt-2 text-4xl font-bold text-[#D4C3B3]">
++                               2 601 400 ₸
+-                               0 ₸
+                              ...
+                            ...
+                      ...
+              ...
+            ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProposalsPage (src/app/proposals/page.tsx:247:13)
+  245 |           <div>
+  246 |             <div className="text-xs font-bold uppercase tracking-widest text-[#A66A3F]">И...
+> 247 |             <div className="mt-2 text-4xl font-bold text-[#D4C3B3]">{formatPrice(getTotal...
+      |             ^
+  248 |             <div className="mt-4">
+  249 |               <div className="mb-2 text-xs font-bold uppercase tracking-widest text-[#B49...
+  250 |               <InlineNumber dark value={globalDiscount} suffix="%" onChange={setGlobalDis...
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="proposals/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/proposals" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="page" pagePath="proposals/...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function ProposalsPage} serverProvidedParams={{...}}>
+                  <ProposalsPage params={Promise} searchParams={Promise}>
+                    <div className="mx-auto ma...">
+                      <div>
+                      <div className="mb-10 grid...">
+                        <Card>
+                        <Card className="flex flex-...">
+                          <div className="rounded-[4...">
+                            <div>
+                              <div>
+                              <div className="mt-2 text-4xl font-bold text-[#D4C3B3]">
++                               2 601 400 ₸
+-                               0 ₸
+                              ...
+                            ...
+                      ...
+              ...
+            ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProposalsPage (src/app/proposals/page.tsx:247:13)
+  245 |           <div>
+  246 |             <div className="text-xs font-bold uppercase tracking-widest text-[#A66A3F]">И...
+> 247 |             <div className="mt-2 text-4xl font-bold text-[#D4C3B3]">{formatPrice(getTotal...
+      |             ^
+  248 |             <div className="mt-4">
+  249 |               <div className="mb-2 text-xs font-bold uppercase tracking-widest text-[#B49...
+  250 |               <InlineNumber dark value={globalDiscount} suffix="%" onChange={setGlobalDis...
+[browser] Image with src "/lumain/haydi-pendant.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/lumain/haydi-pendant.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="proposals/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/proposals" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="page" pagePath="proposals/...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function ProposalsPage} serverProvidedParams={{...}}>
+                  <ProposalsPage params={Promise} searchParams={Promise}>
+                    <div className="mx-auto ma...">
+                      <div>
+                      <div className="mb-10 grid...">
+                        <Card>
+                        <Card className="flex flex-...">
+                          <div className="rounded-[4...">
+                            <div>
+                              <div>
+                              <div className="mt-2 text-4xl font-bold text-[#D4C3B3]">
++                               2 601 400 ₸
+-                               0 ₸
+                              ...
+                            ...
+                      ...
+              ...
+            ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProposalsPage (src/app/proposals/page.tsx:247:13)
+  245 |           <div>
+  246 |             <div className="text-xs font-bold uppercase tracking-widest text-[#A66A3F]">И...
+> 247 |             <div className="mt-2 text-4xl font-bold text-[#D4C3B3]">{formatPrice(getTotal...
+      |             ^
+  248 |             <div className="mt-4">
+  249 |               <div className="mb-2 text-xs font-bold uppercase tracking-widest text-[#B49...
+  250 |               <InlineNumber dark value={globalDiscount} suffix="%" onChange={setGlobalDis...
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/checkout" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="checkout/p...">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function CheckoutPage} serverProvidedParams={{...}}>
+                <CheckoutPage params={Promise} searchParams={Promise}>
+                  <div className="mx-auto ma...">
+                    <div>
+                    <div className="grid gap-8...">
+                      <div>
+                      <Card className="h-fit p-6">
+                        <div className="rounded-[4...">
+                          <div className="space-y-4">
+                            <div>
+                            <div className="flex items...">
+                              <span>
+                              <span>
++                               1 120 000 ₸
+-                               0 ₸
+                            ...
+            ...
+          ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at span (<anonymous>)
+    at CheckoutPage (src/app/checkout/page.tsx:91:15)
+  89 |             <div className="flex items-center justify-between text-sm text-[#766A5F]">
+  90 |               <span>Сумма</span>
+> 91 |               <span>{formatPrice(getTotal())}</span>
+     |               ^
+  92 |             </div>
+  93 |             <div className="border-t border-[rgba(166,106,63,0.18)] pt-4">
+  94 |               <div className="flex items-end justify-between gap-4">
+[browser] A component is changing a controlled input to be uncontrolled. This is likely caused by the value changing from a defined to undefined, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components 
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="proposals/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/proposals" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="page" pagePath="proposals/...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function ProposalsPage} serverProvidedParams={{...}}>
+                  <ProposalsPage params={Promise} searchParams={Promise}>
+                    <div className="mx-auto ma...">
+                      <div>
+                      <div className="mb-10 grid...">
+                        <Card>
+                        <Card className="flex flex-...">
+                          <div className="rounded-[4...">
+                            <div>
+                              <div>
+                              <div className="mt-2 text-4xl font-bold text-[#D4C3B3]">
++                               2 371 500 ₸
+-                               0 ₸
+                              ...
+                            ...
+                      ...
+              ...
+            ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProposalsPage (src/app/proposals/page.tsx:247:13)
+  245 |           <div>
+  246 |             <div className="text-xs font-bold uppercase tracking-widest text-[#A66A3F]">И...
+> 247 |             <div className="mt-2 text-4xl font-bold text-[#D4C3B3]">{formatPrice(getTotal...
+      |             ^
+  248 |             <div className="mt-4">
+  249 |               <div className="mb-2 text-xs font-bold uppercase tracking-widest text-[#B49...
+  250 |               <InlineNumber dark value={globalDiscount} suffix="%" onChange={setGlobalDis...
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="proposals/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/proposals" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="page" pagePath="proposals/...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function ProposalsPage} serverProvidedParams={{...}}>
+                  <ProposalsPage params={Promise} searchParams={Promise}>
+                    <div className="mx-auto ma...">
+                      <div>
+                      <div className="mb-10 grid...">
+                        <Card>
+                        <Card className="flex flex-...">
+                          <div className="rounded-[4...">
+                            <div>
+                              <div>
+                              <div className="mt-2 text-4xl font-bold text-[#D4C3B3]">
++                               2 371 500 ₸
+-                               0 ₸
+                              ...
+                            ...
+                      ...
+              ...
+            ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProposalsPage (src/app/proposals/page.tsx:247:13)
+  245 |           <div>
+  246 |             <div className="text-xs font-bold uppercase tracking-widest text-[#A66A3F]">И...
+> 247 |             <div className="mt-2 text-4xl font-bold text-[#D4C3B3]">{formatPrice(getTotal...
+      |             ^
+  248 |             <div className="mt-4">
+  249 |               <div className="mb-2 text-xs font-bold uppercase tracking-widest text-[#B49...
+  250 |               <InlineNumber dark value={globalDiscount} suffix="%" onChange={setGlobalDis...
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="proposals/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/proposals" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="page" pagePath="proposals/...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function ProposalsPage} serverProvidedParams={{...}}>
+                  <ProposalsPage params={Promise} searchParams={Promise}>
+                    <div className="mx-auto ma...">
+                      <div>
+                      <div className="mb-10 grid...">
+                        <Card>
+                        <Card className="flex flex-...">
+                          <div className="rounded-[4...">
+                            <div>
+                              <div>
+                              <div className="mt-2 text-4xl font-bold text-[#D4C3B3]">
++                               2 371 500 ₸
+-                               0 ₸
+                              ...
+                            ...
+                      ...
+              ...
+            ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at div (<anonymous>)
+    at ProposalsPage (src/app/proposals/page.tsx:248:13)
+  246 |           <div>
+  247 |             <div className="text-xs font-bold uppercase tracking-widest text-[#A66A3F]">И...
+> 248 |             <div className="mt-2 text-4xl font-bold text-[#D4C3B3]">{formatPrice(getTotal...
+      |             ^
+  249 |             <div className="mt-4">
+  250 |               <div className="mb-2 text-xs font-bold uppercase tracking-widest text-[#B49...
+  251 |               <InlineNumber dark value={globalDiscount} suffix="%" onChange={setGlobalDis...
+[browser] Image with src "/lumain/haydi-pendant.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/lumain/haydi-pendant.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/lumain/haydi-track.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+[browser] Image with src "/lumain/haydi-pendant.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+⨯ ./src/lib/data-fetching.ts:71:1
+Expected ',', got 'export'
+  [90m69 |[0m }
+  [90m70 |[0m
+[31m[1m>[0m [90m71 |[0m [36mexport[0m [36masync[0m [36mfunction[0m getProductByIdFromDb(id: string) {
+  [90m   |[0m [31m[1m^^^^^^[0m
+  [90m72 |[0m   [36mreturn[0m demoProducts.find((product) => product.id === id) ?? [36mnull[0m;
+  [90m73 |[0m }
+  [90m74 |[0m
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/data-fetching.ts
+    ./src/app/catalog/page.tsx
+
+
+[browser] ./src/lib/data-fetching.ts:71:1
+Expected ',', got 'export'
+  69 | }
+  70 |
+> 71 | export async function getProductByIdFromDb(id: string) {
+     | ^^^^^^
+  72 |   return demoProducts.find((product) => product.id === id) ?? null;
+  73 | }
+  74 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/data-fetching.ts
+    ./src/app/catalog/page.tsx 
+[browser] ./src/lib/data-fetching.ts:71:1
+Expected ',', got 'export'
+  69 | }
+  70 |
+> 71 | export async function getProductByIdFromDb(id: string) {
+     | ^^^^^^
+  72 |   return demoProducts.find((product) => product.id === id) ?? null;
+  73 | }
+  74 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/data-fetching.ts
+    ./src/app/catalog/page.tsx 
+[browser] ./src/lib/data-fetching.ts:71:1
+Expected ',', got 'export'
+  69 | }
+  70 |
+> 71 | export async function getProductByIdFromDb(id: string) {
+     | ^^^^^^
+  72 |   return demoProducts.find((product) => product.id === id) ?? null;
+  73 | }
+  74 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/data-fetching.ts
+    ./src/app/catalog/page.tsx 
+[browser] ./src/lib/data-fetching.ts:71:1
+Expected ',', got 'export'
+  69 | }
+  70 |
+> 71 | export async function getProductByIdFromDb(id: string) {
+     | ^^^^^^
+  72 |   return demoProducts.find((product) => product.id === id) ?? null;
+  73 | }
+  74 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/data-fetching.ts
+    ./src/app/catalog/page.tsx 
+[browser] ./src/lib/data-fetching.ts:71:1
+Expected ',', got 'export'
+  69 | }
+  70 |
+> 71 | export async function getProductByIdFromDb(id: string) {
+     | ^^^^^^
+  72 |   return demoProducts.find((product) => product.id === id) ?? null;
+  73 | }
+  74 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/data-fetching.ts
+    ./src/app/catalog/page.tsx 
+⨯ ./src/lib/data-fetching.ts:71:1
+Expected ',', got 'export'
+  [90m69 |[0m }
+  [90m70 |[0m
+[31m[1m>[0m [90m71 |[0m [36mexport[0m [36masync[0m [36mfunction[0m getProductByIdFromDb(id: string) {
+  [90m   |[0m [31m[1m^^^^^^[0m
+  [90m72 |[0m   [36mreturn[0m demoProducts.find((product) => product.id === id) ?? [36mnull[0m;
+  [90m73 |[0m }
+  [90m74 |[0m
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/data-fetching.ts
+    ./src/app/catalog/page.tsx
+
+
+⨯ ./src/lib/data-fetching.ts:71:1
+Expected ',', got 'export'
+  [90m69 |[0m }
+  [90m70 |[0m
+[31m[1m>[0m [90m71 |[0m [36mexport[0m [36masync[0m [36mfunction[0m getProductByIdFromDb(id: string) {
+  [90m   |[0m [31m[1m^^^^^^[0m
+  [90m72 |[0m   [36mreturn[0m demoProducts.find((product) => product.id === id) ?? [36mnull[0m;
+  [90m73 |[0m }
+  [90m74 |[0m
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/data-fetching.ts
+    ./src/app/catalog/page.tsx
+
+
+[browser] ./src/lib/data-fetching.ts:71:1
+Expected ',', got 'export'
+  69 | }
+  70 |
+> 71 | export async function getProductByIdFromDb(id: string) {
+     | ^^^^^^
+  72 |   return demoProducts.find((product) => product.id === id) ?? null;
+  73 | }
+  74 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/data-fetching.ts
+    ./src/app/catalog/page.tsx 
+[browser] ./src/lib/data-fetching.ts:71:1
+Expected ',', got 'export'
+  69 | }
+  70 |
+> 71 | export async function getProductByIdFromDb(id: string) {
+     | ^^^^^^
+  72 |   return demoProducts.find((product) => product.id === id) ?? null;
+  73 | }
+  74 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/data-fetching.ts
+    ./src/app/catalog/page.tsx 
+[browser] Uncaught Error: ./src/lib/data-fetching.ts:71:1
+Expected ',', got 'export'
+  69 | }
+  70 |
+> 71 | export async function getProductByIdFromDb(id: string) {
+     | ^^^^^^
+  72 |   return demoProducts.find((product) => product.id === id) ?? null;
+  73 | }
+  74 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/data-fetching.ts
+    ./src/app/catalog/page.tsx
+
+
+    at <unknown> (Error: ./src/lib/data-fetching.ts:71:1)
+    at <unknown> (Error: (./src/lib/data-fetching.ts:71:1)
+[browser] Uncaught Error: ./src/lib/data-fetching.ts:71:1
+Expected ',', got 'export'
+  69 | }
+  70 |
+> 71 | export async function getProductByIdFromDb(id: string) {
+     | ^^^^^^
+  72 |   return demoProducts.find((product) => product.id === id) ?? null;
+  73 | }
+  74 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/data-fetching.ts
+    ./src/app/catalog/page.tsx
+
+
+    at <unknown> (Error: ./src/lib/data-fetching.ts:71:1)
+    at <unknown> (Error: (./src/lib/data-fetching.ts:71:1)
+[browser] ./src/lib/data-fetching.ts:71:1
+Expected ',', got 'export'
+  69 | }
+  70 |
+> 71 | export async function getProductByIdFromDb(id: string) {
+     | ^^^^^^
+  72 |   return demoProducts.find((product) => product.id === id) ?? null;
+  73 | }
+  74 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/data-fetching.ts
+    ./src/app/catalog/page.tsx 
+[browser] ./src/lib/data-fetching.ts:71:1
+Expected ',', got 'export'
+  69 | }
+  70 |
+> 71 | export async function getProductByIdFromDb(id: string) {
+     | ^^^^^^
+  72 |   return demoProducts.find((product) => product.id === id) ?? null;
+  73 | }
+  74 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/data-fetching.ts
+    ./src/app/catalog/[id]/page.tsx 
+[browser] ./src/lib/data-fetching.ts:71:1
+Expected ',', got 'export'
+  69 | }
+  70 |
+> 71 | export async function getProductByIdFromDb(id: string) {
+     | ^^^^^^
+  72 |   return demoProducts.find((product) => product.id === id) ?? null;
+  73 | }
+  74 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/data-fetching.ts
+    ./src/app/page.tsx 
+[browser] ./src/lib/data-fetching.ts:71:1
+Expected ',', got 'export'
+  69 | }
+  70 |
+> 71 | export async function getProductByIdFromDb(id: string) {
+     | ^^^^^^
+  72 |   return demoProducts.find((product) => product.id === id) ?? null;
+  73 | }
+  74 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/data-fetching.ts
+    ./src/app/catalog/page.tsx 
+[browser] ./src/lib/data-fetching.ts:71:1
+Expected ',', got 'export'
+  69 | }
+  70 |
+> 71 | export async function getProductByIdFromDb(id: string) {
+     | ^^^^^^
+  72 |   return demoProducts.find((product) => product.id === id) ?? null;
+  73 | }
+  74 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/data-fetching.ts
+    ./src/app/catalog/[id]/page.tsx 
+[browser] ./src/lib/data-fetching.ts:71:1
+Expected ',', got 'export'
+  69 | }
+  70 |
+> 71 | export async function getProductByIdFromDb(id: string) {
+     | ^^^^^^
+  72 |   return demoProducts.find((product) => product.id === id) ?? null;
+  73 | }
+  74 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/data-fetching.ts
+    ./src/app/page.tsx 
+[browser] ./src/lib/data-fetching.ts:71:1
+Expected ',', got 'export'
+  69 | }
+  70 |
+> 71 | export async function getProductByIdFromDb(id: string) {
+     | ^^^^^^
+  72 |   return demoProducts.find((product) => product.id === id) ?? null;
+  73 | }
+  74 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/data-fetching.ts
+    ./src/app/catalog/page.tsx 
+[browser] ./src/lib/data-fetching.ts:71:1
+Expected ',', got 'export'
+  69 | }
+  70 |
+> 71 | export async function getProductByIdFromDb(id: string) {
+     | ^^^^^^
+  72 |   return demoProducts.find((product) => product.id === id) ?? null;
+  73 | }
+  74 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/data-fetching.ts
+    ./src/app/catalog/page.tsx 
+[browser] ./src/lib/data-fetching.ts:71:1
+Expected ',', got 'export'
+  69 | }
+  70 |
+> 71 | export async function getProductByIdFromDb(id: string) {
+     | ^^^^^^
+  72 |   return demoProducts.find((product) => product.id === id) ?? null;
+  73 | }
+  74 |
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/data-fetching.ts
+    ./src/app/catalog/page.tsx 
+[browser] Image with src "/lumain/haydi-pendant.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/lumain/haydi-track.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/lumain/haydi-hero-chandelier.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/lumain/haydi-pendant.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: C:\Users\emeen\Desktop\haydi.kz\src\app\globals.css:165:1: Unexpected }
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unexpectedClose (turbopack:///[project]/node_modules/postcss/lib/parser.js:587:22)]
+    [at Parser.end (turbopack:///[project]/node_modules/postcss/lib/parser.js:330:12)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:456:16)]
+    [at parser (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:29)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:112:11)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] 
+[browser] ./src/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: C:\Users\emeen\Desktop\haydi.kz\src\app\globals.css:165:1: Unexpected }
+    [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]
+    [at Parser.unexpectedClose (turbopack:///[project]/node_modules/postcss/lib/parser.js:587:22)]
+    [at Parser.end (turbopack:///[project]/node_modules/postcss/lib/parser.js:330:12)]
+    [at Parser.parse (turbopack:///[project]/node_modules/postcss/lib/parser.js:456:16)]
+    [at parser (turbopack:///[project]/node_modules/postcss/lib/parse.js:11:12)]
+    [at new LazyResult (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:165:16)]
+    [at Processor.process (turbopack:///[project]/node_modules/postcss/lib/processor.js:53:14)]
+    [at transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:51)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:29)]
+    [at run (turbopack:///[turbopack-node]/child_process/evaluate.ts:112:11)]
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.tsx [Server Component] 
+[browser] Image with src "/lumain/haydi-pendant.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components 
+⨯ TypeError: Cannot read properties of undefined (reading '0')
+    at saveProposal (src\app\proposals\actions.ts:88:51)
+  86 |   } catch (error) {
+  87 |     if (error instanceof z.ZodError) {
+> 88 |       return { success: false, error: error.errors[0].message };
+     |                                                   ^
+  89 |     }
+  90 |     console.error("Failed to save proposal:", error);
+  91 |     return { success: false, error: "Не удалось сохранить КП" }; {
+  digest: '83843198'
+}
+[browser] ⨯ unhandledRejection: TypeError: Cannot read properties of undefined (reading '0')
+    at saveProposal (src\app\proposals\actions.ts:88:51)
+  86 |   } catch (error) {
+  87 |     if (error instanceof z.ZodError) {
+> 88 |       return { success: false, error: error.errors[0].message };
+     |                                                   ^
+  89 |     }
+  90 |     console.error("Failed to save proposal:", error);
+  91 |     return { success: false, error: "Не удалось сохранить КП" };
+⨯ ReferenceError: Download is not defined
+    at PublicProposalPage (src\app\p\[id]\page.tsx:41:14)
+  39 |         <div className="mb-8 flex justify-end gap-3 print:hidden">
+  40 |           <Button variant="outline" onClick={() => window.print()} className="gap-2 border...
+> 41 |             <Download className="h-4 w-4" />
+     |              ^
+  42 |             Скачать PDF
+  43 |           </Button>
+  44 |           <Link href="/catalog"> {
+  digest: '881313939'
+}
+[browser] Uncaught ReferenceError: Download is not defined
+    at PublicProposalPage (src\app\p\[id]\page.tsx:41:14)
+  39 |         <div className="mb-8 flex justify-end gap-3 print:hidden">
+  40 |           <Button variant="outline" onClick={() => window.print()} className="gap-2 border...
+> 41 |             <Download className="h-4 w-4" />
+     |              ^
+  42 |             Скачать PDF
+  43 |           </Button>
+  44 |           <Link href="/catalog">
+[browser] Image with src "/lumain/haydi-pendant.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/lumain/haydi-track.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/lumain/haydi-pendant.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Uncaught TypeError: doc.getLastAutoTable is not a function
+    at handleExportPDF (src/app/proposals/page.tsx:121:46)
+    at button (<anonymous>)
+    at _c (src/components/ui/index.tsx:26:7)
+    at ProposalsPage (src/app/proposals/page.tsx:177:11)
+  119 |     });
+  120 |
+> 121 |     const table = (doc as AutoTableDocument).getLastAutoTable();
+      |                                              ^
+  122 |     const finalY = table?.finalY || 120;
+  123 |
+  124 |     doc.text(`Subtotal: ${formatPrice(itemsTotal)}`, 14, finalY + 10);
+[browser] Uncaught TypeError: doc.getLastAutoTable is not a function
+    at handleExportPDF (src/app/proposals/page.tsx:122:46)
+    at button (<anonymous>)
+    at _c (src/components/ui/index.tsx:26:7)
+    at ProposalsPage (src/app/proposals/page.tsx:197:11)
+  120 |     });
+  121 |
+> 122 |     const table = (doc as AutoTableDocument).getLastAutoTable();
+      |                                              ^
+  123 |     const finalY = table?.finalY || 120;
+  124 |
+  125 |     doc.text(`Subtotal: ${formatPrice(itemsTotal)}`, 14, finalY + 10);
+⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button ref=... className=... onClick={function onClick} children=...>
+                                        ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at stringify (<anonymous>)
+    at stringify (<anonymous>) {
+  digest: '1202450760'
+}
+[browser] Uncaught TypeError: doc.getLastAutoTable is not a function
+    at handleExportPDF (src/app/proposals/page.tsx:122:46)
+    at button (<anonymous>)
+    at _c (src/components/ui/index.tsx:26:7)
+    at ProposalsPage (src/app/proposals/page.tsx:197:11)
+  120 |     });
+  121 |
+> 122 |     const table = (doc as AutoTableDocument).getLastAutoTable();
+      |                                              ^
+  123 |     const finalY = table?.finalY || 120;
+  124 |
+  125 |     doc.text(`Subtotal: ${formatPrice(itemsTotal)}`, 14, finalY + 10);
+[browser] Uncaught Error: Event handlers cannot be passed to Client Component props.
+  <button ref=... className=... onClick={function onClick} children=...>
+                                        ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at stringify (<anonymous>:1:18)
+    at stringify (<anonymous>:1:18)
+⨯ TypeError: Cannot read properties of undefined (reading '0')
+    at saveProposal (src\app\proposals\actions.ts:88:51)
+  86 |   } catch (error) {
+  87 |     if (error instanceof z.ZodError) {
+> 88 |       return { success: false, error: error.errors[0].message };
+     |                                                   ^
+  89 |     }
+  90 |     console.error("Failed to save proposal:", error);
+  91 |     return { success: false, error: "Не удалось сохранить КП" }; {
+  digest: '83843198'
+}
+[browser] ⨯ unhandledRejection: TypeError: Cannot read properties of undefined (reading '0')
+    at saveProposal (src\app\proposals\actions.ts:88:51)
+  86 |   } catch (error) {
+  87 |     if (error instanceof z.ZodError) {
+> 88 |       return { success: false, error: error.errors[0].message };
+     |                                                   ^
+  89 |     }
+  90 |     console.error("Failed to save proposal:", error);
+  91 |     return { success: false, error: "Не удалось сохранить КП" };
+[browser] A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components 
+[browser] Image with src "/lumain/haydi-hero-chandelier.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button ref=... className=... onClick={function onClick} children=...>
+                                        ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at stringify (<anonymous>)
+    at stringify (<anonymous>) {
+  digest: '1202450760'
+}
+[browser] Uncaught Error: Event handlers cannot be passed to Client Component props.
+  <button ref=... className=... onClick={function onClick} children=...>
+                                        ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at stringify (<anonymous>:1:18)
+    at stringify (<anonymous>:1:18)
+[browser] Image with src "/lumain/haydi-pendant.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "/lumain/haydi-hero-chandelier.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "/lumain/haydi-pendant.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "/lumain/haydi-track.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components 
+[browser] Image with src "/lumain/haydi-sconce.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/lumain/haydi-sconce.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "/lumain/haydi-sconce.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/lumain/haydi-sconce.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "/lumain/haydi-sconce.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/lumain/haydi-sconce.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "/lumain/haydi-sconce.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/lumain/haydi-sconce.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "/lumain/haydi-pendant.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "/lumain/haydi-hero-chandelier.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "/lumain/haydi-track.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Uncaught TypeError: doc.getLastAutoTable is not a function
+    at handleExportPDF (src/app/proposals/page.tsx:122:46)
+    at button (<anonymous>)
+    at _c (src/components/ui/index.tsx:26:7)
+    at ProposalsPage (src/app/proposals/page.tsx:208:11)
+  120 |     });
+  121 |
+> 122 |     const table = (doc as AutoTableDocument).getLastAutoTable();
+      |                                              ^
+  123 |     const finalY = table?.finalY || 120;
+  124 |
+  125 |     doc.text(`Subtotal: ${formatPrice(itemsTotal)}`, 14, finalY + 10);
+⚠ Failed to reload dynamic routes: Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+⨯ unhandledRejection: Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+⨯ unhandledRejection:  Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+⚠ Failed to reload dynamic routes: Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+⚠ Failed to reload dynamic routes: Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+⚠ Failed to reload dynamic routes: Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+⚠ Failed to reload dynamic routes: Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+[browser] Image with src "/lumain/haydi-pendant.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+⨯ unhandledRejection: Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+⨯ unhandledRejection:  Error: You cannot define a route with the same specificity as a optional catch-all route ("/p/[id]" and "/p/[id][[...slug]]").
+    at ignore-listed frames
+[browser] Image with src "/lumain/haydi-sconce.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/lumain/haydi-track.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/lumain/haydi-pendant.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/lumain/haydi-track.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/lumain/haydi-pendant.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/lumain/haydi-pendant.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/lumain/haydi-pendant.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+[browser] Image with src "/lumain/haydi-sconce.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "/lumain/haydi-pendant.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "/lumain/haydi-sconce.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "/lumain/haydi-pendant.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "/lumain/haydi-pendant.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/lumain/haydi-pendant.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/lumain/haydi-hero-chandelier.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/lumain/haydi-pendant.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/lumain/haydi-track.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Image with src "/lumain/haydi-sconce.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "/lumain/haydi-pendant.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "/lumain/haydi-sconce.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[browser] Image with src "/lumain/haydi-pendant.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes

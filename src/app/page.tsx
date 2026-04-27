@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, FileText, ShieldCheck, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui";
-import { syncStatus } from "@/lib/demo-data";
 import { getProductsFromDb } from "@/lib/data-fetching";
 import { formatPrice } from "@/lib/utils";
 
@@ -19,10 +18,10 @@ export default async function Home() {
   }
 
   return (
-    <div>
-      <section className="min-h-[calc(100vh-64px)] border-b border-[rgba(166,106,63,0.18)] bg-[#FAF9F5]">
-        <div className="mx-auto grid min-h-[calc(100vh-64px)] max-w-7xl items-center gap-10 px-4 py-12 lg:grid-cols-[1.05fr_0.95fr]">
-          <div className="max-w-3xl">
+    <div className="space-y-0">
+      <section className="min-h-[calc(100vh-var(--lumain-header-height))] border-b border-[rgba(166,106,63,0.18)] bg-[#FAF9F5]">
+        <div className="mx-auto grid min-h-[calc(100vh-var(--lumain-header-height))] max-w-7xl items-center gap-10 px-4 py-12 lg:grid-cols-[1.05fr_0.95fr]">
+          <div className="max-w-3xl opacity-0 animate-[haydiEnter_560ms_cubic-bezier(0.16,1,0.3,1)_forwards]">
             <div className="mb-6 inline-flex items-center gap-2 rounded-[2px] border border-[rgba(166,106,63,0.18)] bg-white px-3 py-2 text-xs font-bold uppercase tracking-widest text-[#8E623E]">
               <CheckCircle2 className="h-4 w-4" />
               Каталог актуален
@@ -34,23 +33,25 @@ export default async function Home() {
               Премиальная витрина для салона светотехники: понятные карточки, актуальные цены, наличие, характеристики света и быстрые КП для клиента.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <Link href="/catalog">
-                <Button size="lg" className="w-full gap-2 sm:w-auto">
-                  Открыть каталог <ArrowRight className="h-5 w-5" />
-                </Button>
+              <Link 
+                href="/catalog" 
+                className="inline-flex h-12 items-center justify-center gap-2 rounded-[2px] bg-[#A66A3F] px-8 text-base font-semibold text-white shadow-sm shadow-[#A66A3F]/20 transition-all hover:bg-[#8E623E] sm:w-auto"
+              >
+                Открыть каталог <ArrowRight className="h-5 w-5" />
               </Link>
-              <Link href="/collections">
-                <Button variant="outline" size="lg" className="w-full gap-2 sm:w-auto">
-                  <Sparkles className="h-5 w-5" />
-                  Moodboard
-                </Button>
+              <Link 
+                href="/collections" 
+                className="inline-flex h-12 items-center justify-center gap-2 rounded-[2px] border border-[#8E623E]/45 bg-transparent px-8 text-base font-semibold text-[#2D251E] transition-all hover:bg-[#F1ECE4] sm:w-auto"
+              >
+                <Sparkles className="h-5 w-5" />
+                Moodboard
               </Link>
             </div>
           </div>
 
-          <div className="lumain-surface p-3">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[4px] bg-[#F1ECE4]">
-              <Image src="/lumain/haydi-hero-chandelier.jpg" alt={heroProduct.name} fill priority sizes="(min-width: 1024px) 45vw, 100vw" className="object-cover" />
+          <div className="haydi-surface p-3 opacity-0 animate-[haydiEnter_560ms_cubic-bezier(0.16,1,0.3,1)_100ms_forwards]">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-[2px] bg-[#F1ECE4]">
+              <Image src="https://images.unsplash.com/photo-1540634149021-397449563220?auto=format&fit=crop&q=80&w=800" alt={heroProduct.name} fill priority sizes="(min-width: 1024px) 45vw, 100vw" className="object-cover transition-transform duration-[2000ms] hover:scale-110" />
             </div>
             <div className="grid gap-4 p-5 sm:grid-cols-[1fr_auto] sm:items-end">
               <div>
@@ -86,24 +87,26 @@ export default async function Home() {
             Все товары
           </Link>
         </div>
-        <div className="grid gap-4 md:grid-cols-4 md:grid-rows-2">
+        <div className="grid gap-6 md:grid-cols-4 md:grid-rows-2">
           {arrivals.map((product, index) => (
             <Link
               key={product.id}
               href={`/catalog/${product.id}`}
-              className={`group lumain-surface overflow-hidden ${index === 0 ? "md:col-span-2 md:row-span-2" : ""}`}
+              className={`group haydi-surface overflow-hidden opacity-0 animate-[haydiEnter_560ms_cubic-bezier(0.16,1,0.3,1)_forwards] ${index === 0 ? "md:col-span-2 md:row-span-2" : ""}`}
+              style={{ animationDelay: `${(index + 2) * 100}ms` }}
             >
               <div className="relative aspect-[4/5] overflow-hidden bg-[#F1ECE4]">
                 {product.images?.[0] && (product.images[0].startsWith("/") || product.images[0].startsWith("http")) ? (
-                  <Image src={product.images[0]} alt={product.name} fill sizes="(min-width: 768px) 25vw, 100vw" className="object-cover transition-transform duration-700 group-hover:scale-[1.03]" />
+                  <Image src={product.images[0]} alt={product.name} fill sizes="(min-width: 768px) 25vw, 100vw" className="object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
                 ) : (
                   <div className="flex h-full w-full items-center justify-center text-[#A66A3F]">No photo</div>
                 )}
+                <div className="absolute inset-0 bg-black/0 transition-colors group-hover:bg-black/5" />
               </div>
-              <div className="p-4">
-                <div className="text-xs font-bold uppercase tracking-widest text-[#A66A3F]">{product.category}</div>
-                <h3 className="mt-1 font-display text-2xl font-semibold text-[#2D251E]">{product.name}</h3>
-                <div className="mt-2 text-sm font-semibold text-[#8E623E]">{formatPrice(product.discountPrice || product.price)}</div>
+              <div className="p-5">
+                <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#A66A3F]">{product.category}</div>
+                <h3 className="mt-1 font-display text-2xl font-semibold text-[#2D251E] group-hover:text-[#A66A3F] transition-colors">{product.name}</h3>
+                <div className="mt-2 text-sm font-bold text-[#8E623E]">{formatPrice(product.discountPrice || product.price)}</div>
               </div>
             </Link>
           ))}

@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
+
+export const dynamic = "force-dynamic";
 import { formatPrice } from "@/lib/utils";
 import { Button, Card, Badge } from "@/components/ui";
 import { FileText, User, Calendar, ExternalLink, Trash2 } from "lucide-react";
@@ -59,7 +61,7 @@ export default async function AdminProposalsPage() {
                 <div className="flex w-full items-center justify-between gap-4 border-t border-[rgba(166,106,63,0.05)] pt-6 md:w-auto md:border-none md:pt-0">
                   <div className="text-right">
                     <div className="text-xs font-bold uppercase tracking-widest text-[#A66A3F]">Сумма</div>
-                    <div className="text-xl font-bold text-[#2D251E]">{formatPrice(proposal.total)}</div>
+                    <div className="text-xl font-bold text-[#2D251E]">{formatPrice(Number(proposal.total) || 0)}</div>
                   </div>
                   <div className="flex gap-2">
                     <Link href={`/p/${proposal.id}`} target="_blank">

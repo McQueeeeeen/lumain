@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
+import { normalizeProductImages } from "@/lib/product-media";
 import { Product } from "@/types";
 
 export interface DesignerItem extends Product {
@@ -24,7 +25,7 @@ export const useDesignerStore = create<DesignerStore>()(
         }
 
         set({
-          items: [...get().items, { ...product, note: "" }],
+          items: [...get().items, { ...normalizeProductImages(product), note: "" }],
         });
       },
       removeItem: (productId) =>
@@ -33,6 +34,15 @@ export const useDesignerStore = create<DesignerStore>()(
     }),
     {
       name: "designer-storage",
+      merge: (persistedState, currentState) => {
+        const persisted = persistedState as Partial<DesignerStore> | undefined;
+
+        return {
+          ...currentState,
+          ...persisted,
+          items: (persisted?.items ?? currentState.items).map((item) => normalizeProductImages(item)),
+        };
+      },
     }
   )
 );

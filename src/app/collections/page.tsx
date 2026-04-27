@@ -14,17 +14,8 @@ export default function CollectionsPage() {
   const { role } = useViewerStore();
   const { items, removeItem, clear } = useDesignerStore();
 
-  if (role !== "designer" && role !== "manager") {
-    return (
-      <div className="mx-auto max-w-7xl px-4 py-20 text-center">
-        <h1 className="font-display text-4xl font-semibold text-[#2D251E]">Доступ ограничен</h1>
-        <p className="mt-4 text-[#766A5F]">Раздел подборок доступен только для дизайнеров и менеджеров.</p>
-        <Link href="/catalog">
-          <Button className="mt-8">Вернуться в каталог</Button>
-        </Link>
-      </div>
-    );
-  }
+  // Role check disabled for demo presentation as requested
+  // if (role !== "designer" && role !== "manager") { ... }
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-10">
@@ -36,11 +27,12 @@ export default function CollectionsPage() {
           {items.length > 0 ? (
             <Button variant="outline" onClick={clear}>Очистить</Button>
           ) : null}
-          <Link href="/catalog">
-            <Button className="gap-2">
-              <Plus className="h-4 w-4" />
-              Добавить товары
-            </Button>
+          <Link 
+            href="/catalog" 
+            className="inline-flex h-10 items-center justify-center gap-2 rounded-[2px] bg-[#A66A3F] px-5 text-sm font-semibold text-white transition-all hover:bg-[#8E623E]"
+          >
+            <Plus className="h-4 w-4" />
+            Добавить товары
           </Link>
         </div>
       </div>
@@ -63,8 +55,11 @@ export default function CollectionsPage() {
                   </div>
                   <div className="font-display text-2xl font-semibold text-[#2D251E]">{item.name}</div>
                   <div className="flex items-center justify-between gap-3">
-                    <Link href={`/catalog/${item.id}`}>
-                      <Button variant="outline" size="sm">Открыть</Button>
+                    <Link 
+                      href={`/catalog/${item.id}`}
+                      className="inline-flex h-8 items-center justify-center rounded-[2px] border border-[#8E623E]/45 bg-transparent px-3 text-xs font-medium text-[#2D251E] transition-all hover:bg-[#F1ECE4]"
+                    >
+                      Открыть
                     </Link>
                     <Button variant="ghost" size="icon" onClick={() => removeItem(item.id)}>
                       <Trash2 className="h-4 w-4" />
@@ -97,11 +92,12 @@ export default function CollectionsPage() {
                 <Share2 className="h-3 w-3" />
                 Ссылка
               </Button>
-              <Link href={`/collections/${collection.id}`} className="w-full">
-                <Button size="sm" className="w-full gap-2 text-xs">
-                  Открыть
-                  <ArrowRight className="h-3 w-3" />
-                </Button>
+              <Link 
+                href={`/collections/${collection.id}`} 
+                className="inline-flex h-8 w-full items-center justify-center gap-2 rounded-[2px] bg-[#A66A3F] px-3 text-xs font-semibold text-white transition-all hover:bg-[#8E623E]"
+              >
+                Открыть
+                <ArrowRight className="h-3 w-3" />
               </Link>
             </div>
           </Card>

@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 interface CatalogHeaderProps {
   category: string;
   sort: string;
-  resolvedParams: any;
+  resolvedParams: Record<string, string | string[] | undefined>;
   chips: string[];
 }
 
@@ -14,7 +14,14 @@ export function CatalogHeader({ category, sort, resolvedParams, chips }: Catalog
   const router = useRouter();
 
   const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const params = new URLSearchParams(resolvedParams as any);
+    const params = new URLSearchParams();
+
+    Object.entries(resolvedParams).forEach(([key, value]) => {
+      if (typeof value === "string") {
+        params.set(key, value);
+      }
+    });
+
     params.set("sort", e.target.value);
     router.push(`/catalog?${params.toString()}`);
   };
@@ -24,8 +31,19 @@ export function CatalogHeader({ category, sort, resolvedParams, chips }: Catalog
       <div className="flex gap-2 overflow-x-auto pb-2 md:pb-0">
         {chips.map((chip) => {
           const isActive = category === chip;
-          const params = new URLSearchParams(resolvedParams as any);
-          params.set("cat", chip);
+          const params = new URLSearchParams();
+
+          Object.entries(resolvedParams).forEach(([key, value]) => {
+            if (typeof value === "string") {
+              params.set(key, value);
+            }
+          });
+
+          if (chip === "Все") {
+            params.delete("cat");
+          } else {
+            params.set("cat", chip);
+          }
           
           return (
             <Link

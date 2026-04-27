@@ -1,72 +1,161 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
 generator client {
   provider = "prisma-client-js"
 }
 
-datasource db {
-  provider = "sqlite"
-  url      = "file:./dev.db"
+enum Role {
+  admin
+  manager
+  designer
+}
+
+model Profile {
+  id        String   @id @db.Uuid
+  fullName  String?  @map("full_name")
+  role      Role?
+  
+  @@map("profiles")
+}
+
+model Project {
+  id           String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  clientName   String?          @map("client_name")
+  managerName  String?          @map("manager_name")
+  ownerId      String?          @db.Uuid @map("owner_id")
+  status       String?
+  createdAt    DateTime         @default(now()) @map("created_at")
+  rooms        Room[]
+  members      ProjectMember[]
+  products     ProjectProduct[]
+  offers       OfferVersion[]
+  comments     Comment[]
+  lock         ProjectLock?
+
+  @@map("projects")
+}
+
+model ProjectMember {
+  projectId String  @db.Uuid @map("project_id")
+  userId    String  @db.Uuid @map("user_id")
+  role      String?
+  project   Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@id([projectId, userId])
+  @@map("project_members")
+}
+
+model Room {
+  id        String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  projectId String           @db.Uuid @map("project_id")
+  type      String?
+  area      Decimal?
+  style     String?
+  budget    String?
+  project   Project          @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  products  ProjectProduct[]
+
+  @@map("rooms")
 }
 
 model Product {
-  id               String   @id @default(uuid())
-  name             String
-  article          String   @unique
-  brand            String
-  price            Float
-  discountPrice    Float?
-  category         String
-  style            String
-  room             String   // Comma separated list
-  color            String
-  lightColor       String
-  power            Float
-  mounting         String
-  images           String   // JSON string of image URLs
-  stock            Int      @default(0)
-  luminousFlux     Int      @default(0)
-  recommendedArea  String?
-  dimensions       String   // JSON string: {length, width, height}
-  lampBase         String?
-  bulbsIncluded    Boolean  @default(false)
-  supportedBulbs   String?  // JSON string
-  material         String?
-  protection       String?
-  warranty         String?
-  description      String?
-  finish           String?
-  voltage          String?
-  cri              String?
-  installationType String?
-  application      String?  // JSON string
-  unit             String   @default("шт.")
-  deliveryTime     String   @default("В наличии")
-  updatedAt        DateTime @updatedAt
-  createdAt        DateTime @default(now())
+  id           String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name         String?
+  article      String?
+  brand        String?
+  category     String?
+  price        Decimal?
+  stockStatus  String?          @map("stock_status")
+  imageUrl     String?          @map("image_url")
+  lumen        Decimal?
+  description  String?
+  dimensions   Json?
+  finish       String?
+  luminousFlux Int?             @map("luminous_flux")
+  lightColor   String?          @map("light_color")
+  power        Decimal?
+  styleTags    String[]         @map("style_tags")
+  roomTags     String[]         @map("room_tags")
+  projectProducts ProjectProduct[]
+
+  @@map("products")
 }
 
+model ProjectProduct {
+  id              String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  projectId       String   @db.Uuid @map("project_id")
+  roomId          String   @db.Uuid @map("room_id")
+  productId       String?  @db.Uuid @map("product_id")
+  quantity        Int?
+  discountPercent Decimal? @map("discount_percent")
+  role            String?
+  project         Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  room            Room     @relation(fields: [roomId], references: [id], onDelete: Cascade)
+  product         Product? @relation(fields: [productId], references: [id], onDelete: SetNull)
+
+  @@map("project_products")
+}
+
+model OfferVersion {
+  id            String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  projectId     String   @db.Uuid @map("project_id")
+  versionNumber Int?     @map("version_number")
+  data          Json?
+  publicToken   String?  @unique @map("public_token")
+  isActive      Boolean? @default(true) @map("is_active")
+  project       Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@map("offer_versions")
+}
+
+model Comment {
+  id         String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  projectId  String   @db.Uuid @map("project_id")
+  message    String?
+  authorId   String?  @db.Uuid @map("author_id")
+  authorType String?  @map("author_type")
+  createdAt  DateTime @default(now()) @map("created_at")
+  project    Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@map("comments")
+}
+
+model AuditLog {
+  id        String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  action    String?
+  payload   Json?
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("audit_logs")
+}
+
+model ProjectLock {
+  projectId String   @id @db.Uuid @map("project_id")
+  lockedBy  String?  @db.Uuid @map("locked_by")
+  lockedAt  DateTime @default(now()) @map("locked_at")
+  project   Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@map("project_locks")
+}
 model Proposal {
-  id             String   @id @default(uuid())
-  number         Int?     @unique
-  projectName    String?
-  clientName     String
-  clientPhone    String?
-  clientEmail    String?
-  managerName    String
-  date           DateTime @default(now())
-  validityPeriod Int      @default(14)
-  globalDiscount Float    @default(0)
-  items          String   // JSON string of KPItems
-  notes          String?
-  status         String   @default("draft") // draft, sent, accepted, declined
-  total          Float
-  createdAt      DateTime @default(now())
-}
+  id              String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  projectName     String?  @map("project_name")
+  number          Int?     @default(autoincrement())
+  status          String?  @default("draft")
+  clientName      String?  @map("client_name")
+  clientPhone     String?  @map("client_phone")
+  clientEmail     String?  @map("client_email")
+  managerName     String?  @map("manager_name")
+  validityPeriod  Int?     @default(30) @map("validity_period")
+  globalDiscount  Decimal? @default(0) @map("global_discount")
+  items           Json?
+  notes           String?
+  total           Decimal?
+  createdAt       DateTime @default(now()) @map("created_at")
 
-model Collection {
-  id          String   @id @default(uuid())
-  name        String
-  designerId  String
-  items       String   // JSON string of product IDs
-  shareToken  String   @unique
-  createdAt   DateTime @default(now())
+  @@map("proposals")
 }

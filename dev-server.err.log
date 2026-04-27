@@ -5024,3 +5024,58 @@ To fix this, make sure your Cache-Control headers allow revalidation of chunks a
     at ignore-listed frames {
   digest: '1384507797'
 }
+[browser] Image with src "/images/products/spot.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[browser] Uncaught TypeError: Failed to execute 'measure' on 'Performance': '​ProductPage' cannot have a negative time stamp.
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/catalog" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="ru" className="cormorant_...">
+                          <body
++                           className="overflow-x-hidden font-ui bg-[#FAF9F5] text-[#2D251E] antialiased"
+-                           className="overflow-x-hidden font-ui bg-[#FAF9F5] text-[#2D251E] antialiased antigravity-s..."
+                          >
+                  ...
+ 
+[browser] Uncaught TypeError: Cannot read properties of undefined (reading 'icon')
+    at RoleActionButton (src/components/commerce/role-action-button.tsx:66:15)
+    at ProductCard (src/components/commerce/product-card.tsx:69:9)
+    at <anonymous> (src\app\catalog\page.tsx:62:17)
+    at Array.map (<anonymous>:1:18)
+    at CatalogPage (src\app\catalog\page.tsx:56:29)
+  64 |       }}
+  65 |     >
+> 66 |       {config.icon}
+     |               ^
+  67 |       {config.label}
+  68 |     </Button>
+  69 |   );
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.

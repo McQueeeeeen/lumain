@@ -1,19 +1,22 @@
 @import "tailwindcss";
 
 :root {
-  --lumain-color-air: #faf9f5;
-  --lumain-color-white: #ffffff;
-  --lumain-color-porcelain: #f1ece4;
-  --lumain-color-copper: #a66a3f;
-  --lumain-color-bronze: #8e623e;
-  --lumain-color-ink: #2d251e;
-  --lumain-color-muted: #766a5f;
-  --lumain-border-warm: rgba(166, 106, 63, 0.18);
-  --lumain-radius: 4px;
-  --lumain-ease: cubic-bezier(0.16, 1, 0.3, 1);
-  --lumain-duration-slow: 560ms;
-  --lumain-duration-medium: 420ms;
-  --lumain-header-height: 64px;
+  --haydi-color-air: #faf9f5;
+  --haydi-color-white: #ffffff;
+  --haydi-color-porcelain: #f1ece4;
+  --haydi-color-copper: #a66a3f;
+  --haydi-color-bronze: #8e623e;
+  --haydi-color-ink: #2d251e;
+  --haydi-color-muted: #766a5f;
+  --haydi-border-warm: rgba(166, 106, 63, 0.18);
+  --haydi-radius: 4px;
+  --haydi-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --haydi-duration-slow: 560ms;
+  --haydi-duration-medium: 380ms;
+  --haydi-duration-fast: 220ms;
+  --haydi-header-height: 72px;
+  --haydi-shadow-soft: 0 4px 20px -2px rgba(45, 37, 30, 0.04), 0 2px 8px -2px rgba(166, 106, 63, 0.08);
+  --haydi-shadow-gold: 0 12px 40px -12px rgba(166, 106, 63, 0.22);
 }
 
 @layer base {
@@ -24,7 +27,7 @@
   }
 
   html {
-    background: var(--lumain-color-air);
+    background: var(--haydi-color-air);
   }
 
   body {
@@ -32,8 +35,8 @@
     overflow-x: hidden;
     background:
       radial-gradient(circle at top left, rgba(166, 106, 63, 0.08), transparent 34rem),
-      var(--lumain-color-air);
-    color: var(--lumain-color-ink);
+      var(--haydi-color-air);
+    color: var(--haydi-color-ink);
     @apply antialiased;
   }
 }
@@ -47,38 +50,40 @@
     font-family: var(--font-ui);
   }
 
-  .lumain-surface {
-    border: 1px solid var(--lumain-border-warm);
-    background: rgba(255, 255, 255, 0.88);
+  .haydi-surface {
+    border: 1px solid var(--haydi-border-warm);
+    background: rgba(255, 255, 255, 0.76);
+    backdrop-filter: blur(12px);
+    box-shadow: var(--haydi-shadow-soft);
   }
 
-  .lumain-porcelain {
-    border: 1px solid var(--lumain-border-warm);
-    background: var(--lumain-color-porcelain);
+  .haydi-porcelain {
+    border: 1px solid var(--haydi-border-warm);
+    background: var(--haydi-color-porcelain);
   }
 
-  .lumain-motion {
-    transition-duration: var(--lumain-duration-medium);
-    transition-timing-function: var(--lumain-ease);
+  .haydi-motion {
+    transition-duration: var(--haydi-duration-medium);
+    transition-timing-function: var(--haydi-ease);
   }
 
   .glass {
     background: rgba(255, 255, 255, 0.82);
     backdrop-filter: blur(16px);
-    border-bottom: 1px solid var(--lumain-border-warm);
+    border-bottom: 1px solid var(--haydi-border-warm);
   }
 
   .field-input {
     height: 2.75rem;
     width: 100%;
     border-radius: 2px;
-    border: 1px solid var(--lumain-border-warm);
-    background: var(--lumain-color-white);
+    border: 1px solid var(--haydi-border-warm);
+    background: var(--haydi-color-white);
     padding-inline: 0.875rem;
     font-size: 0.9375rem;
-    color: var(--lumain-color-ink);
+    color: var(--haydi-color-ink);
     outline: none;
-    transition: border-color var(--lumain-duration-medium) var(--lumain-ease);
+    transition: border-color var(--haydi-duration-medium) var(--haydi-ease);
   }
 
   .field-input::placeholder {
@@ -86,7 +91,7 @@
   }
 
   .field-input:focus {
-    border-color: var(--lumain-color-copper);
+    border-color: var(--haydi-color-copper);
   }
 
   .animate-spin-slow {
@@ -100,7 +105,7 @@
   }
 }
 
-@keyframes lumainEnter {
+@keyframes haydiEnter {
   from {
     opacity: 0;
     transform: translateY(18px);
@@ -108,5 +113,52 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+  
+  body {
+    background: white !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .haydi-surface {
+    box-shadow: none !important;
+    border: 1px solid #E5E7EB !important;
+    background: white !important;
+  }
+
+  .glass {
+    display: none !important;
+  }
+
+  main {
+    padding-top: 0 !important;
+  }
+
+  footer {
+    display: none !important;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+
+  .print\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+
+  .print\:text-black {
+    color: black !important;
+  }
+
+  .print\:break-inside-avoid {
+    break-inside: avoid !important;
   }
 }

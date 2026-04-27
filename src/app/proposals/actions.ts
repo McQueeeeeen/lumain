@@ -1,49 +1,60 @@
 "use server";
 
-import { prisma } from "@/lib/prisma";
-import { KPItem } from "@/types";
+import { GenerateOfferUseCase } from "@/application/use-cases/generate-offer";
+import { ProjectRepository } from "@/infrastructure/repositories/project-repository";
+import { OfferRepository } from "@/infrastructure/repositories/offer-repository";
 import { revalidatePath } from "next/cache";
 
-export async function saveProposal(payload: {
-  projectName: string;
-  clientName: string;
-  clientPhone: string;
-  clientEmail: string;
-  managerName: string;
-  validityPeriod: number;
-  globalDiscount: number;
-  items: KPItem[];
-  notes: string;
-  total: number;
-}) {
-  try {
-    // Get highest proposal number for manual increment
-    const lastProposal = await prisma.proposal.findFirst({
-      orderBy: { number: "desc" },
-    });
-    const nextNumber = (lastProposal?.number || 0) + 1;
+import { prisma } from "@/lib/prisma";
 
+/**
+ * Server action to save a standalone proposal draft.
+ */
+export async function saveProposal(data: any) {
+  try {
     const proposal = await prisma.proposal.create({
       data: {
-        number: nextNumber,
-        projectName: payload.projectName,
-        clientName: payload.clientName,
-        clientPhone: payload.clientPhone,
-        clientEmail: payload.clientEmail,
-        managerName: payload.managerName,
-        validityPeriod: payload.validityPeriod,
-        globalDiscount: payload.globalDiscount,
-        items: JSON.stringify(payload.items),
-        notes: payload.notes,
-        total: payload.total,
-        status: "sent",
+        projectName: data.projectName,
+        clientName: data.clientName,
+        clientPhone: data.clientPhone,
+        clientEmail: data.clientEmail,
+        managerName: data.managerName,
+        validityPeriod: data.validityPeriod,
+        globalDiscount: data.globalDiscount,
+        items: data.items,
+        notes: data.notes,
+        total: data.total,
       },
     });
 
-    revalidatePath("/admin/proposals");
-    return { success: true, id: proposal.id };
-  } catch (error) {
-    console.error("Failed to save proposal:", error);
-    return { success: false, error: "Не удалось сохранить КП" };
+    return { 
+      success: true, 
+      id: proposal.id, 
+      projectName: proposal.projectName 
+    };
+  } catch (error: any) {
+    console.error("Error saving proposal:", error);
+    return { success: false, error: error.message };
+  }
+}
+
+/**
+ * Server action to generate a shareable offer link.
+ */
+export async function createShareableOffer(projectId: string) {
+  const projectRepo = new ProjectRepository();
+  const offerRepo = new OfferRepository();
+  const generateOffer = new GenerateOfferUseCase(projectRepo, offerRepo);
+
+  try {
+    const token = await generateOffer.execute(projectId);
+    if (token) {
+      revalidatePath(`/offer/${token}`);
+      return { success: true, token };
+    }
+    return { success: false, error: "Failed to generate token" };
+  } catch (error: any) {
+    console.error("Error creating shareable offer:", error);
+    return { success: false, error: error.message };
   }
 }

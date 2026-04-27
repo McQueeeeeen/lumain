@@ -19,6 +19,7 @@ export interface Product {
   mounting: MountingType;
   images: string[];
   stock: number;
+  createdAt?: string;
   updatedAt: string;
   luminousFlux: number;
   recommendedArea: string;
@@ -39,8 +40,8 @@ export interface Product {
   cri: string;
   installationType: string;
   application: string[];
-  unit: string;
-  deliveryTime: string;
+  unit?: string;
+  deliveryTime?: string;
 }
 
 export interface KPItem extends Product {
